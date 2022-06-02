@@ -9,7 +9,7 @@ body {
 }
 
 .homepage_navigation {
-  word-spacing: 1.5rem;
+  word-spacing: 1rem;
 }
 
 .heading {
@@ -21,7 +21,6 @@ body {
 .homepage_button {
   width: 5rem;
   padding-top: 1%;
-  gap: 5rem;
 }
 
 .homepage_button1 {

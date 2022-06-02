@@ -1,0 +1,12 @@
+.rules_container {
+  text-align: center;
+}
+
+.rules_navigation {
+  word-spacing: 1rem;
+}
+
+.rules_heading {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+}
