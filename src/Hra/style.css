@@ -1,0 +1,146 @@
+.game_container {
+  text-align: center;
+}
+
+.game_navigation {
+  word-spacing: 1rem;
+}
+
+.lifebar {
+  padding: 50px 0;
+}
+
+.lifebar img {
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+}
+
+.gamefield {
+  position: relative;
+  width: 90%;
+  min-width: 500px;
+}
+
+.gamefield img {
+  width: 7rem;
+}
+
+.tree img {
+  width: 5rem;
+}
+
+.tree1 {
+  position: absolute;
+  left: 5vw;
+}
+
+.tree2 {
+  position: absolute;
+  right: 5vw;
+}
+
+.tree3 {
+  position: absolute;
+  top: 50vh;
+  left: 5vw;
+}
+
+.tree4 {
+  position: absolute;
+  top: 50vh;
+  right: 5vw;
+}
+
+.house {
+  position: absolute;
+  top: 5vh;
+  left: 15vw;
+}
+
+.house img:hover {
+  cursor: pointer;
+}
+
+.storm {
+  position: absolute;
+  left: 40vw;
+}
+
+.storm img:hover {
+  cursor: pointer;
+}
+
+.electricity {
+  position: absolute;
+  top: 3vh;
+  right: 15vw;
+}
+
+.electricity img:hover {
+  cursor: pointer;
+}
+
+.accident {
+  position: absolute;
+  top: 20vh;
+  right: 5vw;
+}
+
+.accident img:hover {
+  cursor: pointer;
+}
+
+.river {
+  position: absolute;
+  top: 40vh;
+  right: 15vw;
+}
+
+.river img:hover {
+  cursor: pointer;
+}
+
+.fireplace {
+  position: absolute;
+  top: 50vh;
+  left: 40vw;
+}
+
+.fireplace img:hover {
+  cursor: pointer;
+}
+
+.burnt {
+  position: absolute;
+  top: 40vh;
+  left: 15vw;
+}
+
+.burnt img:hover {
+  cursor: pointer;
+}
+
+.snow {
+  position: absolute;
+  top: 20vh;
+  left: 5vw;
+}
+
+.snow img:hover {
+  cursor: pointer;
+}
+
+.path {
+  position: absolute;
+  top: 15vh;
+  left: 15vw;
+}
+
+.path img {
+  width: 70%;
+}
