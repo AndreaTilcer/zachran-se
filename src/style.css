@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lobster&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&display=swap');
+
+body {
+  background-color: #a2dd5f;
+}
+
+.homepage_container {
+  margin: 50px;
+}
+
+.homepage_navigation {
+  word-spacing: 1.5rem;
+}
+
+.heading {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  padding-left: 44%;
+}
+
+.homepage_button {
+  width: 5rem;
+  padding-top: 1%;
+  gap: 5rem;
+}
+
+.homepage_button1 {
+  padding-left: 44%;
+}
+
+.homepage_monkey {
+  max-width: 300px;
+  padding-left: 33%;
+  padding-top: 4%;
+  transform: rotate(-10deg);
+  margin: 0px;
+}
+
+.homepage_call {
+  max-width: 150px;
+  padding-bottom: 13%;
+  transform: scaleX(-1);
+  margin: 0px;
+}

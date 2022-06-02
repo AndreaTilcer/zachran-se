@@ -34,15 +34,20 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|svg|gif)$/,
-        type: 'asset/resource'
-      }
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[hash]-[name].[ext]',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
     new CopyPlugin({
-      patterns: [
-        { from: 'public', to: '', noErrorOnMissing: true },
-      ],
+      patterns: [{ from: 'public', to: '', noErrorOnMissing: true }],
     }),
   ],
 };
