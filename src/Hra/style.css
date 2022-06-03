@@ -1,29 +1,32 @@
 .game_container {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 50px 50px 50px;
 }
 
 .game_navigation {
-  word-spacing: 1rem;
+  word-spacing: 0.5rem;
 }
 
-.lifebar {
-  padding: 50px 0;
+.game_button {
+  width: 3rem;
 }
 
-.lifebar img {
+.lifebar_monkey {
+  width: 3rem;
+  padding: 0.5rem;
+}
+
+.lifebar_hearth {
   width: 2rem;
   padding: 0.5rem;
 }
 
-.game {
-  display: flex;
-  justify-content: center;
-}
-
 .gamefield {
   position: relative;
-  width: 90%;
-  min-width: 500px;
+  width: 98%;
 }
 
 .gamefield img {
@@ -36,30 +39,30 @@
 
 .tree1 {
   position: absolute;
-  left: 5vw;
+  left: 4vw;
 }
 
 .tree2 {
   position: absolute;
-  right: 5vw;
+  right: 4vw;
 }
 
 .tree3 {
   position: absolute;
-  top: 50vh;
-  left: 5vw;
+  top: 65vh;
+  left: 4vw;
 }
 
 .tree4 {
   position: absolute;
-  top: 50vh;
-  right: 5vw;
+  top: 65vh;
+  right: 4vw;
 }
 
 .house {
   position: absolute;
-  top: 5vh;
-  left: 15vw;
+  top: 3vh;
+  left: 20vw;
 }
 
 .house img:hover {
@@ -68,7 +71,7 @@
 
 .storm {
   position: absolute;
-  left: 40vw;
+  left: 43%;
 }
 
 .storm img:hover {
@@ -78,7 +81,7 @@
 .electricity {
   position: absolute;
   top: 3vh;
-  right: 15vw;
+  right: 25vw;
 }
 
 .electricity img:hover {
@@ -87,8 +90,8 @@
 
 .accident {
   position: absolute;
-  top: 20vh;
-  right: 5vw;
+  top: 23vh;
+  right: 15vw;
 }
 
 .accident img:hover {
@@ -97,8 +100,8 @@
 
 .river {
   position: absolute;
-  top: 40vh;
-  right: 15vw;
+  top: 45vh;
+  right: 25vw;
 }
 
 .river img:hover {
@@ -107,8 +110,8 @@
 
 .fireplace {
   position: absolute;
-  top: 50vh;
-  left: 40vw;
+  top: 62vh;
+  left: 43%;
 }
 
 .fireplace img:hover {
@@ -117,8 +120,8 @@
 
 .burnt {
   position: absolute;
-  top: 40vh;
-  left: 15vw;
+  top: 45vh;
+  left: 20vw;
 }
 
 .burnt img:hover {
@@ -127,8 +130,8 @@
 
 .snow {
   position: absolute;
-  top: 20vh;
-  left: 5vw;
+  top: 23vh;
+  left: 10vw;
 }
 
 .snow img:hover {
@@ -138,7 +141,7 @@
 .path {
   position: absolute;
   top: 15vh;
-  left: 15vw;
+  left: 33%;
 }
 
 .path img {
