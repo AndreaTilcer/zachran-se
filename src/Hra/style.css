@@ -138,42 +138,42 @@
 
 .monkey1 {
   transform: translate(200%, -40%);
-  transition: transform 700ms ease-in-out 25ms; 
+  transition: transform 700ms ease-in-out 25ms;
 }
 
 .monkey2 {
   transform: translate(400%, -60%);
-  transition: transform 700ms ease-in-out 25ms; 
+  transition: transform 700ms ease-in-out 25ms;
 }
 
 .monkey3 {
   transform: translate(450%, 20%);
-  transition: transform 700ms ease-in-out 25ms; 
+  transition: transform 700ms ease-in-out 25ms;
 }
 
 .monkey4 {
   transform: translate(400%, 120%);
-  transition: transform 700ms ease-in-out 25ms; 
+  transition: transform 700ms ease-in-out 25ms;
 }
 
 .monkey5 {
   transform: translate(230%, 220%);
-  transition: transform 700ms ease-in-out 25ms; 
+  transition: transform 700ms ease-in-out 25ms;
 }
 
 .monkey6 {
   transform: translate(100%, 150%);
-  transition: transform 700ms ease-in-out 25ms; 
+  transition: transform 700ms ease-in-out 25ms;
 }
 
 .monkey7 {
   transform: translate(10%, 80%);
-  transition: transform 700ms ease-in-out 25ms; 
+  transition: transform 700ms ease-in-out 25ms;
 }
 
 .monkey8 {
   transform: translate(30%, 10%);
-  transition: transform 700ms ease-in-out 25ms; 
+  transition: transform 700ms ease-in-out 25ms;
 }
 
 .monkey img {

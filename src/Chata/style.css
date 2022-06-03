@@ -1,0 +1,36 @@
+.chata_container {
+  border: 30px solid #e7ece0;
+  background-color: white;
+  border-radius: 10%;
+  margin: 0px 190px 0px 190px;
+  position: relative;
+  min-height: 450px;
+}
+
+.heading_2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  padding-left: 30%;
+}
+
+.situace_1 {
+  width: 45%;
+  position: absolute;
+  bottom: 22%;
+  left: 22%;
+}
+
+.answers {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.answers > p {
+  padding: 200px 0px 0px 40px;
+}
+
+.ikona_1 {
+  width: 3.5rem;
+}

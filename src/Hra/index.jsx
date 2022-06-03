@@ -71,51 +71,79 @@ export const Hra = () => {
           <div className="path">
             <img src={Path} alt="Cesta" />
           </div>
-          <div className="house">
-            <img src={House} alt="Chata" onClick={() => {
-              document.querySelector("#player").classList.add("monkey1")
-            }} />
-          </div>
-          <div className="storm">
-            <img src={Storm} alt="Bouřka" onClick={() => {
-              document.querySelector("#player").classList.add("monkey2")
-            }} />
-          </div>
-          <div className="electricity">
+          <Link className="house" to="/chata">
+            <img
+              src={House}
+              alt="Vejit-do-chaty"
+              onClick={() => {
+                document.querySelector('#player').classList.add('monkey1');
+              }}
+            />
+          </Link>{' '}
+          <Link className="storm" to="/bourka">
+            <img
+              src={Storm}
+              alt="Bouřka"
+              onClick={() => {
+                document.querySelector('#player').classList.add('monkey2');
+              }}
+            />
+          </Link>
+          <Link className="electricity" to="/draty">
             <img
               src={Electricity}
               alt="Dráty vysokého napětí"
               onClick={() => {
-                document.querySelector("#player").classList.add("monkey3")
+                document.querySelector('#player').classList.add('monkey3');
               }}
             />
-          </div>
-          <div className="accident">
-            <img src={Accident} alt="Autonehoda" onClick={() => {
-              document.querySelector("#player").classList.add("monkey4")
-            }} />
-          </div>
-          <div className="river">
-            <img src={River} alt="Řeka" onClick={() => {
-              document.querySelector("#player").classList.add("monkey5")
-            }} />
-          </div>
-          <div className="fireplace">
-            <img src={Fireplace} alt="Ohniště" onClick={() => {
-              document.querySelector("#player").classList.add("monkey6")
-            }} />
-          </div>
-          <div className="burnt">
-            <img src={Burnt} alt="Hoří oděv" onClick={() => {
-              document.querySelector("#player").classList.add("monkey7")
-            }} />
-          </div>
-          <div className="snow">
-            <img src={Snow} alt="Lavina" onClick={() => {
-              document.querySelector("#player").classList.add("monkey8")
-            }} />
-          </div>
-          <div className="monkey" id='player'>
+          </Link>
+          <Link className="accident" to="/autonehoda">
+            <img
+              src={Accident}
+              alt="Autonehoda"
+              onClick={() => {
+                document.querySelector('#player').classList.add('monkey4');
+              }}
+            />
+          </Link>
+          <Link className="river" to="/reka">
+            <img
+              src={River}
+              alt="Řeka"
+              onClick={() => {
+                document.querySelector('#player').classList.add('monkey5');
+              }}
+            />
+          </Link>
+          <Link className="fireplace" to="/ohniste">
+            <img
+              src={Fireplace}
+              alt="Ohniště"
+              onClick={() => {
+                document.querySelector('#player').classList.add('monkey6');
+              }}
+            />
+          </Link>
+          <Link className="burnt" to="/popaleny">
+            <img
+              src={Burnt}
+              alt="Hořící oděv"
+              onClick={() => {
+                document.querySelector('#player').classList.add('monkey7');
+              }}
+            />
+          </Link>
+          <Link className="snow" to="/lavina">
+            <img
+              src={Snow}
+              alt="Lavina"
+              onClick={() => {
+                document.querySelector('#player').classList.add('monkey8');
+              }}
+            />
+          </Link>
+          <div className="monkey" id="player">
             <img src={Monkey} alt="Hráč" />
           </div>
         </div>

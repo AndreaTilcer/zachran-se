@@ -8,6 +8,14 @@ import Play from './img/play.svg';
 import Question from './img/question.svg';
 import Monkey from './img/monkey.svg';
 import EmergencyCall from './img/emergency-call.svg';
+import { Chata } from './Chata';
+import { Bourka } from './Bourka';
+import { Draty } from './Draty';
+import { Autonehoda } from './Autonehoda';
+import { Reka } from './Reka';
+import { Ohniste } from './Ohniste';
+import { Popaleny } from './Popaleny';
+import { Lavina } from './Lavina';
 
 const App = () => (
   <div className="homepage_container">
@@ -37,6 +45,14 @@ createRoot(document.querySelector('#app')).render(
       <Route path="/" element={<App />} />
       <Route path="hra" element={<Hra />} />
       <Route path="pravidla" element={<Pravidla />} />
+      <Route path="chata" element={<Chata />} />
+      <Route path="bourka" element={<Bourka />} />
+      <Route path="draty" element={<Draty />} />
+      <Route path="autonehoda" element={<Autonehoda />} />
+      <Route path="reka" element={<Reka />} />
+      <Route path="ohniste" element={<Ohniste />} />
+      <Route path="popaleny" element={<Popaleny />} />
+      <Route path="lavina" element={<Lavina />} />
     </Routes>
   </BrowserRouter>,
 );
