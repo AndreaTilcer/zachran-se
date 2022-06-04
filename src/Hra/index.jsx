@@ -4,7 +4,6 @@ import './style.css';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import Refresh from '../img/refresh.svg';
 import Question from '../img/question.svg';
-import Home from '../img/home.svg';
 import Monkey from '../img/monkey.svg';
 import Heart from '../img/heart.svg';
 import Tree1 from './img/tree1.svg';
@@ -13,9 +12,19 @@ import Tree3 from './img/tree3.svg';
 import Tree4 from './img/tree4.svg';
 import { HraciPole } from '../HraciPole';
 import { Situace } from '../Situace';
+import { situations } from '../databaze';
+
+import { useState } from 'react';
 
 export const Hra = () => {
-  const ukazHraciPlan = false;
+  const [situation, setSituation] = useState({});
+  const [showGamefield, setShowGamefield] = useState(true);
+  const handleOnSelect = (id) => {
+    const oneSituation = situations.filter((item) => item.id === Number(id));
+    setSituation(oneSituation[0]);
+    console.log(oneSituation[0]);
+    setShowGamefield(false);
+  };
 
   return (
     <>
@@ -23,9 +32,6 @@ export const Hra = () => {
         <nav className="game_navigation">
           <Link to="/hra">
             <img className="game_button" src={Refresh} alt="hrat-znovu" />
-          </Link>{' '}
-          <Link to="/">
-            <img className="game_button" src={Home} alt="domu" />
           </Link>{' '}
           <Link to="/pravidla">
             <img className="game_button" src={Question} alt="pravidla" />{' '}
@@ -55,7 +61,17 @@ export const Hra = () => {
           <div className="tree tree4">
             <img src={Tree4} alt="Strom" />
           </div>
-          {ukazHraciPlan ? <HraciPole /> : <Situace />}
+          {showGamefield ? (
+            <HraciPole onSelect={handleOnSelect} />
+          ) : (
+            <Situace
+              key={situation.id}
+              heading={situation.heading}
+              image={situation.image}
+              altText={situation.altText}
+              answers={situation.answers}
+            />
+          )}
         </div>
       </div>
     </>

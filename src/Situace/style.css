@@ -3,32 +3,34 @@
   background-color: white;
   border-radius: 10%;
   margin: 0px 190px 0px 190px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 450px;
 }
 
 .heading_2 {
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
-  padding-left: 260px;
+  text-align: center;
 }
 
 .situace_1 {
-  width: 450px;
-  position: absolute;
-  bottom: 100px;
-  left: 180px;
+  width: 330px;
+  padding-left: 300px;
 }
 
 .answers {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   display: flex;
-  align-items: center;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 .icon_container {
-  padding: 200px 0px 0px 40px;
+  width: 400px;
+  max-width: 200px;
 }
 
 .ikona_1 {
