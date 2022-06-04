@@ -4,6 +4,7 @@ import './style.css';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import Refresh from '../img/refresh.svg';
 import Question from '../img/question.svg';
+import Home from '../img/home.svg';
 import Monkey from '../img/monkey.svg';
 import Heart from '../img/heart.svg';
 import Tree1 from './img/tree1.svg';
@@ -32,6 +33,9 @@ export const Hra = () => {
         <nav className="game_navigation">
           <Link to="/hra">
             <img className="game_button" src={Refresh} alt="hrat-znovu" />
+          </Link>{' '}
+          <Link to="/">
+            <img className="game_button" src={Home} alt="pravidla" />
           </Link>{' '}
           <Link to="/pravidla">
             <img className="game_button" src={Question} alt="pravidla" />{' '}
