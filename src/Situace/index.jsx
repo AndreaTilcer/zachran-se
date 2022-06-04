@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
-import { useDrag } from 'react-dnd';
+// import { useDrag } from 'react-dnd';
 
 import '../style.css';
 import './style.css';
@@ -21,7 +21,7 @@ import FoodTray from './img/food-tray.svg';
 import Hand from './img/hand.svg';
 import Water from './img/water-gallon.svg';
 
-export const Chata = () => {
+export const Situace = () => {
   return (
     <>
       <div className="game_container">

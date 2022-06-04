@@ -20,14 +20,7 @@ import Fireplace from './img/campfire.svg';
 import Burnt from './img/wildfire.svg';
 import Snow from './img/avalanche.svg';
 import Path from './img/cesta.png';
-import { Chata } from '../Chata';
-import { Bourka } from '../Bourka';
-import { Draty } from '../Draty';
-import { Autonehoda } from '../Autonehoda';
-import { Reka } from '../Reka';
-import { Ohniste } from '../Ohniste';
-import { Popaleny } from '../Popaleny';
-import { Lavina } from '../Lavina';
+import { Situace } from '../Situace';
 
 export const Hra = () => {
   return (
@@ -71,7 +64,7 @@ export const Hra = () => {
           <div className="path">
             <img src={Path} alt="Cesta" />
           </div>
-          <Link className="house" to="/chata">
+          <Link className="house" to="/situace">
             <img
               src={House}
               alt="Vejit-do-chaty"
@@ -80,7 +73,7 @@ export const Hra = () => {
               }}
             />
           </Link>{' '}
-          <Link className="storm" to="/bourka">
+          <Link className="storm" to="/situace">
             <img
               src={Storm}
               alt="Bouřka"
@@ -89,7 +82,7 @@ export const Hra = () => {
               }}
             />
           </Link>
-          <Link className="electricity" to="/draty">
+          <Link className="electricity" to="/situace">
             <img
               src={Electricity}
               alt="Dráty vysokého napětí"
@@ -98,7 +91,7 @@ export const Hra = () => {
               }}
             />
           </Link>
-          <Link className="accident" to="/autonehoda">
+          <Link className="accident" to="/situace">
             <img
               src={Accident}
               alt="Autonehoda"
@@ -107,7 +100,7 @@ export const Hra = () => {
               }}
             />
           </Link>
-          <Link className="river" to="/reka">
+          <Link className="river" to="/situace">
             <img
               src={River}
               alt="Řeka"
@@ -125,7 +118,7 @@ export const Hra = () => {
               }}
             />
           </Link>
-          <Link className="burnt" to="/popaleny">
+          <Link className="burnt" to="/situace">
             <img
               src={Burnt}
               alt="Hořící oděv"
@@ -134,7 +127,7 @@ export const Hra = () => {
               }}
             />
           </Link>
-          <Link className="snow" to="/lavina">
+          <Link className="snow" to="/situace">
             <img
               src={Snow}
               alt="Lavina"
