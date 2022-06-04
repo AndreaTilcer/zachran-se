@@ -13,6 +13,7 @@ import Tree3 from './img/tree3.svg';
 import Tree4 from './img/tree4.svg';
 import { HraciPole } from '../HraciPole';
 import { Situace } from '../Situace';
+import { HraciPole } from '../HraciPole';
 
 export const Hra = () => {
   return (
