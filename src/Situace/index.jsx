@@ -3,9 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 // import { useDrag } from 'react-dnd';
 
-import '../style.css';
 import './style.css';
-import '../Hra/style.css';
 import Situace1 from './img/chata.png';
 import Flour from './img/flour.svg';
 import FoodTray from './img/food-tray.svg';
@@ -21,30 +19,22 @@ export const Situace = () => {
         </h2>
         <img className="situace_1" src={Situace1} alt="Horici-panev" />
         <div className="answers">
-          <p>
-            {' '}
-            <img className="ikona_1" src={Hand} alt="Stahnu-panev" /> <br></br>
-            Stáhnu pánev z plotýnky a nechám oheň dohořet
-          </p>
-          <p>
-            {' '}
-            <img
-              className="ikona_1"
-              src={FoodTray}
-              alt="Prikryji-poklici"
-            />{' '}
-            <br></br>Přikryji pánev poklicí a vařič vypnu
-          </p>
-          <p>
-            {' '}
-            <img className="ikona_1" src={Flour} alt="Zasypu-moukou" />{' '}
-            <br></br>Oheň zasypu moukou
-          </p>
-          <p>
-            {' '}
-            <img className="ikona_1" src={Water} alt="Uhasim-vodou" /> <br></br>
-            Vodou či vodním hasícím přístrojem
-          </p>
+          <div className="icon_container">
+            <img className="ikona_1" src={Hand} alt="Stahnu-panev" />
+            <p>Stáhnu pánev z plotýnky a nechám oheň dohořet</p>
+          </div>
+          <div className="icon_container">
+            <img className="ikona_1" src={FoodTray} alt="Prikryji-poklici" />
+            <p>Přikryji pánev poklicí a vařič vypnu</p>
+          </div>
+          <div className="icon_container">
+            <img className="ikona_1" src={Flour} alt="Zasypu-moukou" />
+            <p>Oheň zasypu moukou</p>
+          </div>
+          <div className="icon_container">
+            <img className="ikona_1" src={Water} alt="Uhasim-vodou" />
+            <p>Vodou či vodním hasícím přístrojem</p>
+          </div>
         </div>
       </div>
     </>

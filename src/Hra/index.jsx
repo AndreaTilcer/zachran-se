@@ -13,9 +13,10 @@ import Tree3 from './img/tree3.svg';
 import Tree4 from './img/tree4.svg';
 import { HraciPole } from '../HraciPole';
 import { Situace } from '../Situace';
-import { HraciPole } from '../HraciPole';
 
 export const Hra = () => {
+  const ukazHraciPlan = false;
+
   return (
     <>
       <div className="game_container">
@@ -54,7 +55,7 @@ export const Hra = () => {
           <div className="tree tree4">
             <img src={Tree4} alt="Strom" />
           </div>
-          <HraciPole />
+          {ukazHraciPlan ? <HraciPole /> : <Situace />}
         </div>
       </div>
     </>
