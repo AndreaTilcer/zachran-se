@@ -1,0 +1,146 @@
+.house {
+  position: absolute;
+  top: 3vh;
+  left: 20vw;
+}
+
+.house img:hover {
+  cursor: pointer;
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
+.storm {
+  position: absolute;
+  left: 43%;
+}
+
+.storm img:hover {
+  cursor: pointer;
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
+.electricity {
+  position: absolute;
+  top: 3vh;
+  right: 25vw;
+}
+
+.electricity img:hover {
+  cursor: pointer;
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
+.accident {
+  position: absolute;
+  top: 23vh;
+  right: 15vw;
+}
+
+.accident img:hover {
+  cursor: pointer;
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
+.river {
+  position: absolute;
+  top: 45vh;
+  right: 25vw;
+}
+
+.river img:hover {
+  cursor: pointer;
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
+.fireplace {
+  position: absolute;
+  top: 62vh;
+  left: 43%;
+}
+
+.fireplace img:hover {
+  cursor: pointer;
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
+.burnt {
+  position: absolute;
+  top: 45vh;
+  left: 20vw;
+}
+
+.monkey {
+  position: absolute;
+  left: 28vw;
+  top: 20vh;
+}
+
+.monkey1 {
+  transform: translate(200%, -40%);
+  transition: transform 700ms ease-in-out 25ms;
+}
+
+.monkey2 {
+  transform: translate(400%, -60%);
+  transition: transform 700ms ease-in-out 25ms;
+}
+
+.monkey3 {
+  transform: translate(450%, 20%);
+  transition: transform 700ms ease-in-out 25ms;
+}
+
+.monkey4 {
+  transform: translate(400%, 120%);
+  transition: transform 700ms ease-in-out 25ms;
+}
+
+.monkey5 {
+  transform: translate(230%, 220%);
+  transition: transform 700ms ease-in-out 25ms;
+}
+
+.monkey6 {
+  transform: translate(100%, 150%);
+  transition: transform 700ms ease-in-out 25ms;
+}
+
+.monkey7 {
+  transform: translate(10%, 80%);
+  transition: transform 700ms ease-in-out 25ms;
+}
+
+.monkey8 {
+  transform: translate(30%, 10%);
+  transition: transform 700ms ease-in-out 25ms;
+}
+
+.monkey img {
+  width: 5rem;
+}
+
+.burnt img:hover {
+  cursor: pointer;
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
+.snow {
+  position: absolute;
+  top: 23vh;
+  left: 10vw;
+}
+
+.snow img:hover {
+  cursor: pointer;
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
+.path {
+  position: absolute;
+  top: 17vh;
+  left: 30%;
+}
+
+.path img {
+  width: 70%;
+}
