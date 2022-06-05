@@ -20,9 +20,17 @@ const useDidMountEffect = (func, deps) => {
   }, deps);
 };
 
-export const Situace = ({ heading, image, altText, answers }) => {
+export const Situace = ({
+  id,
+  heading,
+  image,
+  altText,
+  answers,
+  onContinue,
+}) => {
   const [answerID, setAnswerID] = useState('');
   const [isCorrect, setIsCorrect] = useState(false);
+  const [openWindow, setOpenWindow] = useState(false);
 
   useDidMountEffect(() => {
     console.log('second render');
@@ -43,24 +51,25 @@ export const Situace = ({ heading, image, altText, answers }) => {
     );
 
     setIsCorrect(correctAnswer[0].correct);
-    isCorrect ? console.log('Pouč se') : null;
-    console.log(isCorrect);
-    console.log(correctAnswer[0].correct);
+    setOpenWindow(true);
   };
 
   return (
     <>
       <div className="situace_container">
         <h2 className="heading_2">{heading}</h2>
-        {isCorrect ? (
+        {openWindow ? (
           <>
+            <h3>{isCorrect ? 'Správná' : 'Špatná'} odpověď</h3>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Voluptatibus, dicta dolore minus placeat eum reprehenderit
               perspiciatis ea itaque minima aperiam inventore atque possimus.
               Deserunt officiis placeat fugiat saepe cumque accusamus?
             </p>
-            <button>Dále</button>
+            <button onClick={onContinue}>
+              {isCorrect ? 'Další otázka' : 'Zkus to znovu'}
+            </button>
           </>
         ) : (
           <>
@@ -68,6 +77,7 @@ export const Situace = ({ heading, image, altText, answers }) => {
               onDrop={(ev) => drop(ev)}
               onDragOver={(ev) => allowDrop(ev)}
               className="situace_1"
+              key={id}
               src={image}
               alt={altText}
             />
@@ -79,6 +89,7 @@ export const Situace = ({ heading, image, altText, answers }) => {
                       draggable="true"
                       onDragStart={(ev) => drag(ev)}
                       className="ikona_1"
+                      key={item.id}
                       id={item.id}
                       src={item.icon}
                       alt={item.iconAlt}

@@ -26,6 +26,9 @@ export const Hra = () => {
     console.log(oneSituation[0]);
     setShowGamefield(false);
   };
+  const handleContinue = () => {
+    setShowGamefield(true);
+  };
 
   return (
     <>
@@ -69,6 +72,7 @@ export const Hra = () => {
             <HraciPole onSelect={handleOnSelect} />
           ) : (
             <Situace
+              onContinue={handleContinue}
               key={situation.id}
               heading={situation.heading}
               image={situation.image}
