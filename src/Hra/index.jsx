@@ -53,8 +53,11 @@ const [n, setN] = useState(1)
 
   const removeLife = () => {
     setI(i + 1);
-    i < lives.length - 1 ? setLifebar(lives[i]) : console.log('Game Over');
-  };
+    if (i < lives.length - 1) {setLifebar(lives[i]) }
+    else {
+      setLifebar(lives[i]); 
+      console.log('Game Over');
+  };}
 
   return (
     <>
