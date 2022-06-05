@@ -20,12 +20,12 @@ const useDidMountEffect = (func, deps) => {
   }, deps);
 };
 
-export const Situace = ({ heading, image, altText, answers }) => {
+export const Situace = ({ heading, image, altText, answers, onAnswer }) => {
   const [answerID, setAnswerID] = useState('');
-  const [isCorrect, setIsCorrect] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(null);
 
   useDidMountEffect(() => {
-    console.log('second render');
+    onAnswer(isCorrect);
   }, [isCorrect]);
 
   const drag = (ev) => {
@@ -43,9 +43,6 @@ export const Situace = ({ heading, image, altText, answers }) => {
     );
 
     setIsCorrect(correctAnswer[0].correct);
-    isCorrect ? console.log('Pouč se') : null;
-    console.log(isCorrect);
-    console.log(correctAnswer[0].correct);
   };
 
   return (
