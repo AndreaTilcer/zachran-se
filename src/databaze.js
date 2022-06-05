@@ -51,24 +51,32 @@ export const situations = [
     altText: 'Jak nejlépe uhasíš vznícený olej na pánvi?',
     answers: [
       {
+        id: 1,
         answer: 'Stáhnu pánev z plotýnky a nechám oheň dohořet',
         icon: hand,
         iconAlt: 'Stáhnu pánev z plotýnky a nechám oheň dohořet',
+        correct: false,
       },
       {
+        id: 2,
         answer: 'Přikryji pánev poklicí a vařič vypnu',
         icon: foodTray,
         iconAlt: 'Přikryji pánev poklicí a vařič vypnu',
+        correct: true,
       },
       {
+        id: 3,
         answer: 'Oheň zasypu moukou',
         icon: flour,
         iconAlt: 'Oheň zasypu moukou',
+        correct: false,
       },
       {
+        id: 4,
         answer: 'Vodou či vodním hasícím přístrojem',
         icon: water,
         iconAlt: 'Vodou či vodním hasícím přístrojem',
+        correct: false,
       },
     ],
   },
