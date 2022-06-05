@@ -16,10 +16,14 @@ import { Situace } from '../Situace';
 import { situations } from '../databaze';
 
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 export const Hra = () => {
   const [situation, setSituation] = useState({});
   const [showGamefield, setShowGamefield] = useState(true);
+
+  const [lifebar, setLifebar] = useState([Heart, Heart, Heart, Heart, Heart]);
+
   const handleOnSelect = (id) => {
     const oneSituation = situations.filter((item) => item.id === Number(id));
     setSituation(oneSituation[0]);
@@ -28,6 +32,14 @@ export const Hra = () => {
   };
   const handleContinue = () => {
     setShowGamefield(true);
+  };
+  const handleOnAnswer = (isCorrect) => {
+    console.log(isCorrect);
+  };
+
+  const removeLife = () => {
+    setLifebar(lifebar.splice(1, 4));
+    console.log(lifebar);
   };
 
   return (
@@ -46,12 +58,11 @@ export const Hra = () => {
         </nav>
         <div className="lifebar">
           <img className="lifebar_monkey" src={Monkey} alt="Opička" />
-          <img className="lifebar_heart" src={Heart} alt="Život" />
-          <img className="lifebar_heart" src={Heart} alt="Život" />
-          <img className="lifebar_heart" src={Heart} alt="Život" />
-          <img className="lifebar_heart" src={Heart} alt="Život" />
-          <img className="lifebar_heart" src={Heart} alt="Život" />
+          {lifebar.map((item) => (
+            <img src={item} className="lifebar_heart" />
+          ))}
         </div>
+        <button onClick={removeLife}>klik</button>
       </div>
       <Outlet />
       <div className="game">
@@ -78,6 +89,7 @@ export const Hra = () => {
               image={situation.image}
               altText={situation.altText}
               answers={situation.answers}
+              onAnswer={handleOnAnswer}
             />
           )}
         </div>

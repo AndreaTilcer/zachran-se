@@ -27,13 +27,14 @@ export const Situace = ({
   altText,
   answers,
   onContinue,
+  onAnswer,
 }) => {
   const [answerID, setAnswerID] = useState('');
   const [isCorrect, setIsCorrect] = useState(false);
   const [openWindow, setOpenWindow] = useState(false);
 
   useDidMountEffect(() => {
-    console.log('second render');
+    onAnswer(isCorrect);
   }, [isCorrect]);
 
   const drag = (ev) => {
