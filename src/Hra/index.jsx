@@ -35,7 +35,14 @@ export const Hra = () => {
     setShowGamefield(false);
   };
 
+
+const [shouldMonkeyMove, setShouldMonkeyMove] = useState(false) 
+
+const [n, setN] = useState(1)
+  
   const handleContinue = () => {
+    isAnswerCorrect? setShouldMonkeyMove(true) : null
+    isAnswerCorrect && n < 9? setN(n+1) : null
     isAnswerCorrect ? setShowGamefield(true) : setShowGamefield(false);
   };
 
@@ -87,7 +94,7 @@ i<lives.length-1? setLifebar(lives[i]) : console.log("Game Over")
             <img src={Tree4} alt="Strom" />
           </div>
           {showGamefield ? (
-            <HraciPole onSelect={handleOnSelect} />
+            <HraciPole onSelect={handleOnSelect} shouldMonkeyMove={shouldMonkeyMove} n={n}/>
           ) : (
             <Situace
               onAnswer={handleOnAnswer}
