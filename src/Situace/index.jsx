@@ -30,7 +30,7 @@ export const Situace = ({
   onAnswer,
 }) => {
   const [answerID, setAnswerID] = useState('');
-  const [isCorrect, setIsCorrect] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(null);
   const [openWindow, setOpenWindow] = useState(false);
 
   useDidMountEffect(() => {
