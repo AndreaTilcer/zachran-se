@@ -26,6 +26,7 @@ export const Hra = () => {
   const [lifebar, setLifebar] = useState(lives[0]);
 
   const [i, setI] = useState(1)
+  const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
 
   const handleOnSelect = (id) => {
     const oneSituation = situations.filter((item) => item.id === Number(id));
@@ -33,11 +34,14 @@ export const Hra = () => {
     console.log(oneSituation[0]);
     setShowGamefield(false);
   };
+
   const handleContinue = () => {
-    setShowGamefield(true);
+    isAnswerCorrect ? setShowGamefield(true) : setShowGamefield(false);
   };
+
   const handleOnAnswer = (isCorrect) => {
     isCorrect? null : removeLife()
+    setIsAnswerCorrect(isCorrect);
   };
 
 
@@ -86,13 +90,13 @@ i<lives.length-1? setLifebar(lives[i]) : console.log("Game Over")
             <HraciPole onSelect={handleOnSelect} />
           ) : (
             <Situace
+              onAnswer={handleOnAnswer}
               onContinue={handleContinue}
               key={situation.id}
               heading={situation.heading}
               image={situation.image}
               altText={situation.altText}
               answers={situation.answers}
-              onAnswer={handleOnAnswer}
             />
           )}
         </div>
