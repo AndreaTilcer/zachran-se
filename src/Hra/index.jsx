@@ -14,6 +14,7 @@ import Tree4 from './img/tree4.svg';
 import { HraciPole } from '../HraciPole';
 import { Situace } from '../Situace';
 import { situations } from '../databaze';
+import { lives } from '../databaze';
 
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -22,7 +23,9 @@ export const Hra = () => {
   const [situation, setSituation] = useState({});
   const [showGamefield, setShowGamefield] = useState(true);
 
-  const [lifebar, setLifebar] = useState([Heart, Heart, Heart, Heart, Heart]);
+  const [lifebar, setLifebar] = useState(lives[0]);
+
+  const [i, setI] = useState(1)
 
   const handleOnSelect = (id) => {
     const oneSituation = situations.filter((item) => item.id === Number(id));
@@ -34,19 +37,20 @@ export const Hra = () => {
     setShowGamefield(true);
   };
   const handleOnAnswer = (isCorrect) => {
-    console.log(isCorrect);
+    isCorrect? null : removeLife()
   };
 
+
   const removeLife = () => {
-    setLifebar(lifebar.splice(1, 4));
-    console.log(lifebar);
+    setI(i+1)
+i<lives.length-1? setLifebar(lives[i]) : console.log("Game Over")
   };
 
   return (
     <>
       <div className="game_container">
         <nav className="game_navigation">
-          <Link to="/hra">
+          <Link to="]/hra">
             <img className="game_button" src={Refresh} alt="hrat-znovu" />
           </Link>{' '}
           <Link to="/">
@@ -62,7 +66,6 @@ export const Hra = () => {
             <img src={item} className="lifebar_heart" />
           ))}
         </div>
-        <button onClick={removeLife}>klik</button>
       </div>
       <Outlet />
       <div className="game">
