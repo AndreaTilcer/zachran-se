@@ -55,6 +55,11 @@ export const Situace = ({
     setOpenWindow(true);
   };
 
+  const gameButton = () => {
+    onContinue();
+    setOpenWindow(false);
+  };
+
   return (
     <>
       <div className="situace_container">
@@ -68,7 +73,7 @@ export const Situace = ({
               perspiciatis ea itaque minima aperiam inventore atque possimus.
               Deserunt officiis placeat fugiat saepe cumque accusamus?
             </p>
-            <button onClick={onContinue}>
+            <button onClick={gameButton}>
               {isCorrect ? 'Další otázka' : 'Zkus to znovu'}
             </button>
           </>

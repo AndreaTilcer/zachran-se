@@ -25,7 +25,7 @@ export const Hra = () => {
 
   const [lifebar, setLifebar] = useState(lives[0]);
 
-  const [i, setI] = useState(1)
+  const [i, setI] = useState(1);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
 
   const handleOnSelect = (id) => {
@@ -47,14 +47,13 @@ const [n, setN] = useState(1)
   };
 
   const handleOnAnswer = (isCorrect) => {
-    isCorrect? null : removeLife()
+    isCorrect ? null : removeLife();
     setIsAnswerCorrect(isCorrect);
   };
 
-
   const removeLife = () => {
-    setI(i+1)
-i<lives.length-1? setLifebar(lives[i]) : console.log("Game Over")
+    setI(i + 1);
+    i < lives.length - 1 ? setLifebar(lives[i]) : console.log('Game Over');
   };
 
   return (
