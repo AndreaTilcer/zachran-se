@@ -2,6 +2,10 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
+import next from './img/next.svg';
+import back from './img/back.svg';
+import correct from './img/correct.svg';
+import wrong from './img/wrong.svg';
 
 // import { useDrag } from 'react-dnd';
 
@@ -66,15 +70,44 @@ export const Situace = ({
         <h2 className="heading_2">{heading}</h2>
         {openWindow ? (
           <>
-            <h3>{isCorrect ? 'Správná' : 'Špatná'} odpověď</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, dicta dolore minus placeat eum reprehenderit
-              perspiciatis ea itaque minima aperiam inventore atque possimus.
-              Deserunt officiis placeat fugiat saepe cumque accusamus?
-            </p>
-            <button onClick={gameButton}>
-              {isCorrect ? 'Další otázka' : 'Zkus to znovu'}
+            {isCorrect ? (
+              <>
+                <h3 className="heading_3">
+                  <img
+                    className="heading_icon"
+                    src={correct}
+                    alt="Správná odpověď"
+                  />{' '}
+                  Správná odpověď
+                </h3>
+              </>
+            ) : (
+              <>
+                <h3 className="heading_3">
+                  <img
+                    className="heading_icon"
+                    src={wrong}
+                    alt="Špatná odpověď"
+                  />{' '}
+                  Špatná odpověď
+                </h3>
+              </>
+            )}
+            <div className="correct_answer_container">
+              <img className="situace_1" key={id} src={image} alt={altText} />
+              <p className="answers correct">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus, dicta dolore minus placeat eum reprehenderit
+                perspiciatis ea itaque minima aperiam inventore atque possimus.
+                Deserunt officiis placeat fugiat saepe cumque accusamus?
+              </p>
+            </div>
+            <button className="window_button" onClick={gameButton}>
+              {isCorrect ? (
+                <img src={next} alt="Další otázka" />
+              ) : (
+                <img src={back} alt="Zkus to znovu" />
+              )}
             </button>
           </>
         ) : (

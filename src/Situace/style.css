@@ -28,6 +28,12 @@
   justify-content: space-evenly;
 }
 
+.answers.correct {
+  width: 450px;
+  font-size: 16px;
+  padding-left: 30px;
+}
+
 .icon_container {
   width: 400px;
   max-width: 200px;
@@ -35,4 +41,32 @@
 
 .ikona_1 {
   width: 3.5rem;
+}
+
+.heading_3 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  text-align: center;
+}
+
+.window_button {
+  width: 4rem;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.window_button {
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.heading_icon {
+  width: 3rem;
+  padding-right: 1rem;
+}
+
+.correct_answer_container {
+  display: flex;
+  justify-content: space-between;
 }

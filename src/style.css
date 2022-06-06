@@ -5,7 +5,11 @@ body {
 }
 
 .homepage_container {
-  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .homepage_navigation {
@@ -15,29 +19,26 @@ body {
 .heading {
   font-family: 'Amatic SC', cursive;
   font-size: 60px;
-  padding-left: 44%;
 }
 
 .homepage_button {
   width: 5rem;
-  padding-top: 1%;
+  margin-top: 50px;
 }
 
-.homepage_button1 {
-  padding-left: 44%;
+.homepage_picture {
+  display: flex;
 }
 
 .homepage_monkey {
   max-width: 300px;
-  padding-left: 33%;
-  padding-top: 4%;
+  margin-top: 150px;
   transform: rotate(-10deg);
   margin: 0px;
 }
 
 .homepage_call {
   max-width: 150px;
-  padding-bottom: 13%;
   transform: scaleX(-1);
   margin: 0px;
 }

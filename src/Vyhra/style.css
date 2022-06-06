@@ -1,0 +1,25 @@
+.victory_button {
+  width: 5rem;
+}
+
+.victory_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.victory_picture {
+  display: flex;
+}
+
+.victory_monkey {
+  max-width: 300px;
+  transform: rotate(-10deg);
+  margin: 0px;
+}
+
+.victory_stars {
+  max-width: 150px;
+}

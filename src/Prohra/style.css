@@ -1,0 +1,11 @@
+.loss_monkey {
+  width: 250px;
+  height: 250px;
+
+  margin: 0px;
+}
+
+.loss_fire {
+  width: 350px;
+  transform: rotate(+10deg);
+}

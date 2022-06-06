@@ -42,8 +42,8 @@ import River from './HraciPole/img/river.svg';
 import Fireplace from './HraciPole/img/campfire.svg';
 import Burnt from './HraciPole/img/wildfire.svg';
 import Snow from './HraciPole/img/avalanche.svg';
-import heart from "./img/heart.svg"
-import heartEmpty from "./img/heart_empty.svg"
+import heart from './img/heart.svg';
+import heartEmpty from './img/heart_empty.svg';
 
 export const situations = [
   {
@@ -422,10 +422,10 @@ export const gamefieldIcons = [
 ];
 
 export const lives = [
-[heart, heart, heart, heart, heart],
-[heart, heart, heart, heart, heartEmpty],
-[heart, heart, heart, heartEmpty, heartEmpty],
-[heart, heart, heartEmpty, heartEmpty, heartEmpty],
-[heart, heartEmpty, heartEmpty, heartEmpty, heartEmpty],
-[heartEmpty, heartEmpty, heartEmpty, heartEmpty, heartEmpty]
-]
+  [heart, heart, heart, heart, heart],
+  [heart, heart, heart, heart, heartEmpty],
+  [heart, heart, heart, heartEmpty, heartEmpty],
+  [heart, heart, heartEmpty, heartEmpty, heartEmpty],
+  [heart, heartEmpty, heartEmpty, heartEmpty, heartEmpty],
+  [heartEmpty, heartEmpty, heartEmpty, heartEmpty, heartEmpty],
+];

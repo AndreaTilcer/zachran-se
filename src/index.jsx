@@ -9,13 +9,16 @@ import Question from './img/question.svg';
 import Monkey from './img/monkey.svg';
 import EmergencyCall from './img/emergency-call.svg';
 import { Situace } from './Situace';
+import { Vyhra } from './Vyhra';
+import { Prohra } from './Prohra';
 
 const App = () => (
   <div className="homepage_container">
     <h1 className="heading">ZACHRAŇ SE</h1>
-
-    <img className="homepage_monkey" src={Monkey} alt="opice" />
-    <img className="homepage_call" src={EmergencyCall} alt="tisnove-volani" />
+    <div className="homepage_picture">
+      <img className="homepage_monkey" src={Monkey} alt="opice" />
+      <img className="homepage_call" src={EmergencyCall} alt="tisnove-volani" />
+    </div>
     <nav className="homepage_navigation">
       <Link to="/hra">
         <img
@@ -27,6 +30,8 @@ const App = () => (
       <Link to="/pravidla">
         <img className="homepage_button" src={Question} alt="pravidla" />{' '}
       </Link>
+      <br></br>
+      <Link to="/vyhra">Výhra</Link> <Link to="/prohra">Prohra</Link>
     </nav>
     <Outlet />
   </div>
@@ -39,6 +44,8 @@ createRoot(document.querySelector('#app')).render(
       <Route path="hra" element={<Hra />} />
       <Route path="pravidla" element={<Pravidla />} />
       <Route path="situace" element={<Situace />} />
+      <Route path="vyhra" element={<Vyhra />} />
+      <Route path="prohra" element={<Prohra />} />
     </Routes>
   </BrowserRouter>,
 );
