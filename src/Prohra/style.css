@@ -1,11 +1,30 @@
 .loss_monkey {
   width: 250px;
   height: 250px;
-
   margin: 0px;
+  transform: rotate(-5deg);
 }
 
 .loss_fire {
   width: 350px;
   transform: rotate(+10deg);
+}
+
+@media (max-width: 450px) {
+  .victory_navigation {
+    text-align: center;
+  }
+
+  .victory_button {
+    width: 4rem;
+  }
+
+  .loss_monkey {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .loss_fire {
+    max-width: 200px;
+  }
 }

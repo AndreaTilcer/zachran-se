@@ -153,3 +153,81 @@
 .path img {
   width: 70%;
 }
+
+.resposive_path {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .path {
+    display: none;
+  }
+
+  .lock {
+    width: 2rem;
+    position: absolute;
+  }
+
+  .house {
+    position: absolute;
+    top: 10px;
+    left: 33vw;
+  }
+
+  .storm {
+    position: absolute;
+    left: 33vw;
+    top: 162px;
+  }
+
+  .electricity {
+    position: absolute;
+    top: 314px;
+    left: 33vw;
+  }
+
+  .accident {
+    position: absolute;
+    top: 466px;
+    left: 33vw;
+  }
+
+  .river {
+    position: absolute;
+    top: 618px;
+    left: 33vw;
+  }
+
+  .fireplace {
+    position: absolute;
+    top: 770px;
+    left: 33vw;
+  }
+
+  .burnt {
+    position: absolute;
+    top: 922px;
+    left: 33vw;
+  }
+
+  .snow {
+    position: absolute;
+    top: 1074px;
+    left: 33vw;
+  }
+
+  .monkey1 {
+    position: absolute;
+    left: 15vw;
+    top: 10vh;
+  }
+
+  .monkey1 img {
+    width: 5rem;
+  }
+
+  .resposive_path {
+    display: absolute;
+    top: 5vh;
+  }
+}

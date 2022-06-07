@@ -42,3 +42,13 @@ body {
   transform: scaleX(-1);
   margin: 0px;
 }
+
+@media (max-width: 450px) {
+  .homepage_monkey {
+    max-width: 250px;
+  }
+
+  .homepage_call {
+    max-width: 100px;
+  }
+}

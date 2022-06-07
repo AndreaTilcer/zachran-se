@@ -3,7 +3,6 @@ import '../style.css';
 import './style.css';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import Play from '../img/play.svg';
-import Question from '../img/question.svg';
 import Home from '../img/home.svg';
 
 export const Pravidla = () => {
@@ -17,9 +16,6 @@ export const Pravidla = () => {
           <Link to="/">
             <img className="homepage_button" src={Home} alt="domu" />
           </Link>{' '}
-          <Link to="/pravidla">
-            <img className="homepage_button" src={Question} alt="pravidla" />{' '}
-          </Link>
         </nav>
         <Outlet />
 

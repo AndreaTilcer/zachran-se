@@ -23,3 +23,21 @@
 .victory_stars {
   max-width: 150px;
 }
+
+@media (max-width: 450px) {
+  .victory_navigation {
+    text-align: center;
+  }
+
+  .victory_button {
+    width: 4rem;
+  }
+
+  .victory_monkey {
+    max-width: 250px;
+  }
+
+  .victory_stars {
+    max-width: 100px;
+  }
+}

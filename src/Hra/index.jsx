@@ -16,8 +16,7 @@ import { Situace } from '../Situace';
 import { situations } from '../databaze';
 import { lives } from '../databaze';
 
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect, useNavigate } from 'react';
 
 export const Hra = () => {
   const [situation, setSituation] = useState({});
@@ -48,6 +47,10 @@ export const Hra = () => {
   const handleOnAnswer = (isCorrect) => {
     isCorrect ? null : removeLife();
     setIsAnswerCorrect(isCorrect);
+  };
+
+  const navigateFunction = () => {
+    let navigate = useNavigate();
   };
 
   const removeLife = () => {

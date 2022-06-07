@@ -55,6 +55,39 @@
   right: 4vw;
 }
 
+@media (max-width: 450px) {
+  .game_container {
+    flex-direction: column;
+    margin: 5px 0px 10px 0px;
+  }
 
+  .game_navigation {
+    word-spacing: 0.5rem;
+  }
 
+  .game_button {
+    width: 2.5rem;
+  }
 
+  .lifebar_monkey {
+    width: 3rem;
+    padding: 0.5rem;
+  }
+
+  .lifebar_heart {
+    width: 2rem;
+    padding: 0.5rem;
+  }
+
+  .tree img {
+    display: none;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .gamefield {
+    display: flex;
+    margin: 0px;
+    justify-content: left;
+  }
+}

@@ -94,7 +94,7 @@ export const Situace = ({
               </>
             )}
             <div className="correct_answer_container">
-              <img className="situace_1" key={id} src={image} alt={altText} />
+              <img className="situace_2" key={id} src={image} alt={altText} />
               <p className="answers correct">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Voluptatibus, dicta dolore minus placeat eum reprehenderit
