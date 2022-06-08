@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Outlet, useNavigate } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import next from './img/next.svg';
 import back from './img/back.svg';
@@ -32,6 +32,7 @@ export const Situace = ({
   answers,
   onContinue,
   onAnswer,
+  gameOver
 }) => {
   const [answerID, setAnswerID] = useState('');
   const [isCorrect, setIsCorrect] = useState(null);
@@ -59,9 +60,20 @@ export const Situace = ({
     setOpenWindow(true);
   };
 
+  
+  const navigate = useNavigate()
+
+  const navigateProhra = () => {
+    navigate('/prohra');
+  }
+  
   const gameButton = () => {
+    if (gameOver) {
+      navigateProhra()
+    }
+    else{
     onContinue();
-    setOpenWindow(false);
+    setOpenWindow(false);}
   };
 
   return (
