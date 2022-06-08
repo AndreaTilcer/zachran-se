@@ -1,6 +1,13 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Link, Outlet, useNavigate } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  Outlet,
+  useNavigate,
+} from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import next from './img/next.svg';
 import back from './img/back.svg';
@@ -32,7 +39,7 @@ export const Situace = ({
   answers,
   onContinue,
   onAnswer,
-  gameOver
+  gameOver,
 }) => {
   const [answerID, setAnswerID] = useState('');
   const [isCorrect, setIsCorrect] = useState(null);
@@ -60,20 +67,25 @@ export const Situace = ({
     setOpenWindow(true);
   };
 
-  
-  const navigate = useNavigate()
+  const onClickDrag = (ev) => {
+    (ev) => drag(ev);
+    (ev) => drop(ev);
+    (ev) => allowDrop(ev);
+  };
+
+  const navigate = useNavigate();
 
   const navigateProhra = () => {
     navigate('/prohra');
-  }
-  
+  };
+
   const gameButton = () => {
     if (gameOver) {
-      navigateProhra()
+      navigateProhra();
+    } else {
+      onContinue();
+      setOpenWindow(false);
     }
-    else{
-    onContinue();
-    setOpenWindow(false);}
   };
 
   return (
@@ -138,7 +150,7 @@ export const Situace = ({
                   <div className="icon_container">
                     <img
                       draggable="true"
-                      onClick={onClickDrag}
+                      onClick={(ev) => onClickDrag(ev)}
                       onDragStart={(ev) => drag(ev)}
                       className="ikona_1"
                       key={item.id}
