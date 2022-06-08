@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style.css';
 import './style.css';
-import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Outlet, useNavigate } from 'react-router-dom';
 import Refresh from '../img/refresh.svg';
 import Question from '../img/question.svg';
 import Home from '../img/home.svg';
@@ -16,7 +16,7 @@ import { Situace } from '../Situace';
 import { situations } from '../databaze';
 import { lives } from '../databaze';
 
-import { useState, useEffect, useNavigate } from 'react';
+import { useState, useEffect } from 'react';
 
 export const Hra = () => {
   const [situation, setSituation] = useState({});
@@ -26,6 +26,8 @@ export const Hra = () => {
 
   const [i, setI] = useState(1);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
+
+  const [gameOver, setGameOver] = useState(false)
 
   const handleOnSelect = (id) => {
     const oneSituation = situations.filter((item) => item.id === Number(id));
@@ -49,19 +51,27 @@ export const Hra = () => {
     setIsAnswerCorrect(isCorrect);
   };
 
-  const navigateFunction = () => {
-    let navigate = useNavigate();
-  };
+  const navigate = useNavigate()
 
+
+
+  const navigateVyhra = () => {
+    navigate('/vyhra');
+  }
+
+n === 9? setTimeout(navigateVyhra, 1500) : null
+  
   const removeLife = () => {
     setI(i + 1);
     if (i < lives.length - 1) {
       setLifebar(lives[i]);
-    } else {
+    } 
+    else {
       setLifebar(lives[i]);
-      console.log('Game Over');
-    }
-  };
+setGameOver(true)
+       }
+  } 
+ 
 
   return (
     <>
@@ -80,7 +90,7 @@ export const Hra = () => {
         <div className="lifebar">
           <img className="lifebar_monkey" src={Monkey} alt="Opička" />
           {lifebar.map((item) => (
-            <img src={item} className="lifebar_heart" />
+            <img src={item} className="lifebar_heart"/>
           ))}
         </div>
       </div>
@@ -114,6 +124,7 @@ export const Hra = () => {
               image={situation.image}
               altText={situation.altText}
               answers={situation.answers}
+              gameOver={gameOver}
             />
           )}
         </div>

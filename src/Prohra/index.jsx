@@ -8,6 +8,7 @@ import Home from '../img/home.svg';
 import cryingMonkey from './img/crying-monkey.png';
 import fire from './img/fire.svg';
 import Refresh from '../img/refresh.svg';
+import { lives } from "../databaze.js";
 
 export const Prohra = () => {
   return (
