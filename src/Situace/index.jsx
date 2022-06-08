@@ -126,6 +126,7 @@ export const Situace = ({
                   <div className="icon_container">
                     <img
                       draggable="true"
+                      onClick={onClickDrag}
                       onDragStart={(ev) => drag(ev)}
                       className="ikona_1"
                       key={item.id}

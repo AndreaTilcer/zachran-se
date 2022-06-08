@@ -60,6 +60,11 @@ export const Hra = () => {
     } else {
       setLifebar(lives[i]);
       console.log('Game Over');
+      {
+        () => {
+          navigateFunction.navigate('./prohra', { replace: true });
+        };
+      }
     }
   };
 
