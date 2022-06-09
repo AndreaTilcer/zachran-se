@@ -117,6 +117,7 @@ export const Hra = () => {
               onSelect={handleOnSelect}
               shouldMonkeyMove={shouldMonkeyMove}
               n={n}
+              i={i}
             />
           ) : (
             <Situace

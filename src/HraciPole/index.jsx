@@ -4,14 +4,18 @@ import Monkey from '../img/monkey.svg';
 import Path from './img/cesta.png';
 import lock from './img/lock.svg';
 import liana from './img/liana.svg';
+import monkey1 from "./img/monkey-plaster.png"
+import monkey2 from "./img/monkey-bandage.png"
 import { gamefieldIcons } from '../databaze';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
-export const HraciPole = ({ onSelect, shouldMonkeyMove, n }) => {
+export const HraciPole = ({ onSelect, shouldMonkeyMove, n, i }) => {
   const moveMonkey = () => {
     document.querySelector('#player').classList.add(`monkey${n}`);
   };
+
+  const [player, setPlayer] = useState(null)
 
   useEffect(() => {
     document.querySelector('#player').classList.add(`monkey${n - 1}`);
@@ -21,6 +25,9 @@ export const HraciPole = ({ onSelect, shouldMonkeyMove, n }) => {
     shouldMonkeyMove ? setTimeout(moveMonkey, 300) : null;
   }, []);
 
+useEffect( () => {
+if(i < 3) {setPlayer(Monkey)} else if (i>=3 && i<=4) {setPlayer(monkey1)} else {setPlayer(monkey2)}
+}, [i])
   return (
     <>
       <div className="path">
@@ -54,7 +61,7 @@ export const HraciPole = ({ onSelect, shouldMonkeyMove, n }) => {
       })}
 
       <div className="monkey1" id="player">
-        <img src={Monkey} alt="Hráč" />
+        <img src={player} alt="Hráč" />
       </div>
     </>
   );
