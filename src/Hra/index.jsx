@@ -76,13 +76,14 @@ export const Hra = () => {
     }
   };
 
+  const refresh = () => {
+
+  }
+
   return (
     <>
       <div className="game_container">
         <nav className="game_navigation">
-          <Link to="/hra">
-            <img className="game_button" src={Refresh} alt="hrat-znovu" />
-          </Link>{' '}
           <Link to="/">
             <img className="game_button" src={Home} alt="pravidla" />
           </Link>{' '}
