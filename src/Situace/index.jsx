@@ -59,7 +59,7 @@ export const Situace = ({
 
   const drop = (ev) => {
     ev.preventDefault();
-    getResult(ev);
+    getResult(answerID);
   };
 
   const getIconID = (ev) => {

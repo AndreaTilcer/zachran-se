@@ -52,6 +52,14 @@
   width: 3.5rem;
 }
 
+.ikona_1:hover {
+  cursor: grab;
+}
+
+.ikona_1:active {
+  cursor: grabbing;
+}
+
 .heading_3 {
   font-family: 'Amatic SC', cursive;
   font-size: 25px;
