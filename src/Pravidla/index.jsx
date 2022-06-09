@@ -2,8 +2,8 @@ import React from 'react';
 import '../style.css';
 import './style.css';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
-import Play from '../img/play.svg';
-import Home from '../img/home.svg';
+import play from '../img/play.svg';
+import home from '../img/home.svg';
 
 export const Pravidla = () => {
   return (
@@ -11,10 +11,10 @@ export const Pravidla = () => {
       <div className="rules_container">
         <nav className="rules_navigation">
           <Link to="/hra">
-            <img className="homepage_button" src={Play} alt="hrat-znovu" />
+            <img className="homepage_button" src={play} alt="Hrát znovu" />
           </Link>{' '}
           <Link to="/">
-            <img className="homepage_button" src={Home} alt="domu" />
+            <img className="homepage_button" src={home} alt="Domů" />
           </Link>{' '}
         </nav>
         <Outlet />

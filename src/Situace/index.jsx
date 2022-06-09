@@ -36,6 +36,7 @@ export const Situace = ({
   heading,
   image,
   altText,
+  answerCorrect,
   answers,
   onContinue,
   onAnswer,
@@ -119,12 +120,7 @@ export const Situace = ({
             )}
             <div className="correct_answer_container">
               <img className="situace_2" key={id} src={image} alt={altText} />
-              <p className="answers correct">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptatibus, dicta dolore minus placeat eum reprehenderit
-                perspiciatis ea itaque minima aperiam inventore atque possimus.
-                Deserunt officiis placeat fugiat saepe cumque accusamus?
-              </p>
+              <p className="answers correct">{answerCorrect}</p>
             </div>
             <button className="window_button" onClick={gameButton}>
               {isCorrect ? (

@@ -4,10 +4,10 @@ import './style.css';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import { Hra } from './Hra';
 import { Pravidla } from './Pravidla';
-import Play from './img/play.svg';
-import Question from './img/question.svg';
-import Monkey from './img/monkey.svg';
-import EmergencyCall from './img/emergency-call.svg';
+import play from './img/play.svg';
+import question from './img/question.svg';
+import monkey from './img/monkey.svg';
+import emergencyCall from './img/emergency-call.svg';
 import { Situace } from './Situace';
 import { Vyhra } from './Vyhra';
 import { Prohra } from './Prohra';
@@ -16,22 +16,20 @@ const App = () => (
   <div className="homepage_container">
     <h1 className="heading">ZACHRAŇ SE</h1>
     <div className="homepage_picture">
-      <img className="homepage_monkey" src={Monkey} alt="opice" />
-      <img className="homepage_call" src={EmergencyCall} alt="tisnove-volani" />
+      <img className="homepage_monkey" src={monkey} alt="Opice" />
+      <img className="homepage_call" src={emergencyCall} alt="Tísňové volání" />
     </div>
     <nav className="homepage_navigation">
       <Link to="/hra">
         <img
           className="homepage_button homepage_button1"
-          src={Play}
+          src={play}
           alt="zacit-hrat"
         />
       </Link>{' '}
       <Link to="/pravidla">
-        <img className="homepage_button" src={Question} alt="pravidla" />{' '}
+        <img className="homepage_button" src={question} alt="pravidla" />{' '}
       </Link>
-      <br></br>
-      <Link to="/vyhra">Výhra</Link> <Link to="/prohra">Prohra</Link>
     </nav>
     <Outlet />
   </div>

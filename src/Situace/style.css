@@ -39,7 +39,7 @@
 
 .answers.correct {
   width: 450px;
-  font-size: 16px;
+  font-size: 15px;
   padding-left: 30px;
 }
 
@@ -87,14 +87,44 @@
   .answers {
     max-width: 700px;
   }
+
+  .answers.correct {
+    max-width: 430px;
+  }
+
+  .situace_2 {
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .situace_container {
+    width: 650px;
+    margin: 0px;
+    margin-left: 140px;
+  }
+
+  .answers {
+    max-width: 540px;
+    font-size: 12px;
+  }
+
+  .answers.correct {
+    max-width: 300px;
+  }
+
+  .situace_2 {
+    max-width: 240px;
+    max-height: 260px;
+  }
 }
 
 @media (max-width: 450px) {
   .situace_container {
-    max-width: 250px;
-    position: absolute;
-    left: 0;
-    z-index: 1;
+    width: 350px;
+    margin: 0px;
+    margin-left: 10px;
+    border: 15px solid #e7ece0;
   }
 
   .situace_1 {
@@ -110,5 +140,17 @@
 
   .ikona_1 {
     width: 3rem;
+  }
+
+  .correct_answer_container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .answers.correct {
+    width: 300px;
+    padding: 0px;
   }
 }

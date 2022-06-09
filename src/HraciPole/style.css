@@ -230,4 +230,44 @@
     display: block;
     top: 5vh;
   }
+
+  .monkey2 {
+    transform: translate(0%, 120%);
+    transition: transform 700ms ease-in-out 25ms;
+  }
+
+  .monkey3 {
+    transform: translate(0%, 350%);
+    transition: transform 700ms ease-in-out 25ms;
+  }
+
+  .monkey4 {
+    transform: translate(0%, 520%);
+    transition: transform 700ms ease-in-out 25ms;
+  }
+
+  .monkey5 {
+    transform: translate(0%, 710%);
+    transition: transform 700ms ease-in-out 25ms;
+  }
+
+  .monkey6 {
+    transform: translate(0%, 890%);
+    transition: transform 700ms ease-in-out 25ms;
+  }
+
+  .monkey7 {
+    transform: translate(0%, 1080%);
+    transition: transform 700ms ease-in-out 25ms;
+  }
+
+  .monkey8 {
+    transform: translate(0%, 1250%);
+    transition: transform 700ms ease-in-out 25ms;
+  }
+
+  .monkey9 {
+    transform: translate(0%, 1300%);
+    transition: transform 700ms ease-in-out 25ms;
+  }
 }

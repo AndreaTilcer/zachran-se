@@ -51,6 +51,8 @@ export const situations = [
     heading: 'Jak nejlépe uhasíš vznícený olej na pánvi?',
     image: chata,
     altText: 'Jak nejlépe uhasíš vznícený olej na pánvi?',
+    answerCorrect:
+      'Rychlá a správná reakce může vše zachránit. Je třeba ihned vypnout zdroj tepla a celou pánev zakrýt pečícím plechem nebo dostatečně velkou poklicí (je možné použít i navlhčenou utěrku). Tím se zamezí přístupu vzduchu k plamenům a oheň se během chvilky sám udusí. Nikdy se nesmí hořící olej hasit vodou! Došlo by k vyvržení oleje do okolí a tím ke zvětšení objemu plamenů, které mohou zachvátit celou místnost. Hrozí také ošklivé popálení nebo opaření. Při vaření, smažení, opékání apod. je potřeba zajistit vždy stály dohled. Pozor také na odkládání hořlavých předmětů jako jsou utěrky, papírové ručníky či chňapky.',
     answers: [
       {
         id: 1,
@@ -89,6 +91,8 @@ export const situations = [
     image: storm,
     altText:
       'Co uděláš, když tě bouřka zastihne v přírodě, v otevřeném terénu?',
+    answerCorrect:
+      'Poloha v podřepu s nohama co neblíže u sebe představuje nejbezpečnější ochranu před bleskem v otevřeném prostoru. Nohy je potřeba mít co nejvíce u sebe, aby nevznikalo tzv. krokové napětí. Za bouřky se ale neschovávej ani pod osamělými stromy, na okraji lesa, pod převisy nízkých skal, či v menších staveních bez hromosvodu. Vhodný úkryt nepředstavuje ani stan či malá jeskyně ve skále, tam všude vás může zasáhnout blesk. Největší nebezpečí zásahu bleskem hrozí při pobytu v otevřeném terénu a na vyvýšených místech. Velké nebezpečí představuje také koupání a pohyb v blízkosti vody. Za bouřky venku nepřenášej kovové předměty – fungují jako hromosvod.',
     answers: [
       {
         id: 1,
@@ -127,6 +131,8 @@ export const situations = [
     image: electricity,
     altText:
       'Co uděláš, naleznešli při procházce spadlé dráty vysokého napětí?',
+    answerCorrect:
+      'Vysoké napětí je mnohem nebezpečnější než domácí zásuvka, neboť jeho velikost přesahuje i několik desítek tisíc voltů a kontakt s ním znamená téměř jistou smrt. Nikdy se nedotýkej drátů spadlých na zem! Nikdy nešplhej na tramvaje, trolejbusy nebo vagóny na nádraží! Pro zásah vysokým napětím se nemusíš drátů ani dotknout, výboj přeskočí i na poměrně velkou vzdálenost. Pokud se v blízkosti drátů vyskytuje poraněný člověk, první pomoc mu můžeš podat až po zajištění bezpečnosti na místě úrazu - odpojení poraněného od proudu. Po zásahu elektrickým proudem je nutné vždy nechat vyšetřit postiženého lékařem, k poruchám srdeční činnosti může docházet i delší dobu po zásahu proudem.',
     answers: [
       {
         id: 1,
@@ -169,6 +175,8 @@ export const situations = [
     image: accident,
     altText:
       'Co uděláš, stane-li se v tvé blízkosti dopravní nehoda, při níž je zraněn člověk?',
+    answerCorrect:
+      'Když se člověk stane svědkem dopravní nehody a může poskytnout pomoc ostatním v první řadě je potřeba zachovat klid. Při poskytování pomoci dbát na vlastní bezpečnost a bezpečnost ostatních účastníků nehody. Obléct si výstražnou vestu a neprodleně zavolat na linku tísňového volání, nejlépe 112. Je-li to možné, v dostatečné vzdálenosti před nehodou umístit výstražný trojúhelník a zajistit provizorní regulaci nebo odklon dopravy, aby nedošlo k řetězení nehody. Zjistit, jaký je rozsah nehody – počet zraněných, další možné nebezpečí a v rámci svých možností nebo za pomoci operátora tísňové linky poskytnout první pomoc. Po příjezdu záchranářů se řídit jejich pokyny a jako svědek dopravní nehody setrvat na místě, být k dispozici veliteli zásahu a poskytnout své svědectví. Nikdy nezapomínej na důležitou zásadu chování v silničním provozu: „vidět a být viděn“.',
     answers: [
       {
         id: 1,
@@ -207,6 +215,8 @@ export const situations = [
     heading: 'Když se rozvodní řeka:',
     image: river,
     altText: 'Když se rozvodní řeka:',
+    answerCorrect:
+      'Jednou z nejčastějších mimořádných událostí způsobených přírodními vlivy v ČR jsou povodně. Je důležité vědět, že síla přírodních živlů je stále, i v dnešní moderní době, zrádná, těžko předvídatelná a není ji možné zcela zkrotit. Jednou z důležitých zásad při povodni je, že se nesmíš zdržovat blízko břehů, hrozí zde jejich podmáčení a následný sesuv. Obdobné nebezpečí hrozí také, pokud se budeš zdržovat na mostech. Tady pod tíhou proudu, naplavenin a vlivem podmáčení může dojít k jejich zřícení. Také brodit se povodňovou vodou, a to i v místech, která dobře znáš, je nebezpečné. Doslova život ohrožující je vyjet si na rozvodněnou řeku na lodi. Jakékoliv podcenění rizik při povodni může skončit tragicky.',
     answers: [
       {
         id: 1,
@@ -247,6 +257,8 @@ export const situations = [
     heading: 'Můžeš rozdělávat oheň v lese?',
     image: fireplace,
     altText: 'Můžeš rozdělávat oheň v lese?',
+    answerCorrect:
+      'V lese oheň nikdy nerozdělávej! Vhodné místo pro ohniště je minimálně 50 metrů od okraje lesa a v dostatečné vzdálenosti od budov a hořlavých materiálů. Oheň nikdy nezakládej pod větvemi stromů, na kořenech stromů, na suchém listí, lesní hrabance nebo rašelině, v blízkosti suché trávy nebo obilí, stohů slámy, seníků apod. Ohniště je vždy potřeba bezpečně oddělit od okolního prostředí, například kameny, obsypáním pískem, vyhloubením zeminy apod. Pro zapálení v žádném případě nepoužívejte vysoce hořlavé látky (např. líh). Oheň nesmíš ponechat bez dozoru. Před ochodem musíš ohniště důkladně uhasit (z ohniště se nesmí kouřit a popel i půda pod ohništěm musí být chladná. Děti by neměly být u ohniště bez dozoru osob starších 18-ti let.',
     answers: [
       {
         id: 1,
@@ -287,6 +299,8 @@ export const situations = [
     image: burnt,
     altText:
       'Co uděláš, když při opékání špekáčků začne kamarádovi hořet oděv?',
+    answerCorrect:
+      'K tomu, aby oheň mohl hořet, potřebuje zejména přívod vzduchu. Proto základní zásada pro uhašení ohně je, pokusit se zamezit přívod vzduchu a tím hoření udusit, respektive uhasit. Pokud na nás začne hořet oděv, v žádném případě nesmíme utíkat, protože jen ohni přidáváme vzduch. Nejúčinnější uhašení je hodit na hořícího deku, kabát, prostě tlustou textilii (nesmí být z umělých vláken), kterou udusíme hoření. Pokud nic po ruce nemáme, pomůže lehnout si na zem, pro ochranu obličeje si ho zakrýt dlaněmi (dlaně nepřikládejte na tvář jen v případě, že hoří rukávy oblečení) a kutálet se ze strany na stranu tak, abychom zamezili přístupu vzduchu a tudíž uhasili hořící oděv.',
     answers: [
       {
         id: 1,
@@ -322,9 +336,10 @@ export const situations = [
   },
   {
     id: 8,
-    heading: 'Jak se co nejlépe zachováš, pokud tě zastihne horská lavina?',
+    heading: 'Jak se co nejlépe zachovat, pokud tě zastihne horská lavina?',
     image: snow,
-    altText: 'Jak se co nejlépe zachováš, pokud tě zastihne horská lavina?',
+    altText: 'Jak se co nejlépe zachovat, pokud tě zastihne horská lavina?',
+    answerCorrect: '',
     answers: [
       {
         id: 1,

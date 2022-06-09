@@ -2,13 +2,12 @@ import React from 'react';
 import '../Vyhra/style.css';
 import './style.css';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
-import Play from '../img/play.svg';
-import Question from '../img/question.svg';
-import Home from '../img/home.svg';
+import question from '../img/question.svg';
+import home from '../img/home.svg';
 import cryingMonkey from './img/crying-monkey.png';
 import fire from './img/fire.svg';
-import Refresh from '../img/refresh.svg';
-import { lives } from "../databaze.js";
+import refresh from '../img/refresh.svg';
+import { lives } from '../databaze.js';
 
 export const Prohra = () => {
   return (
@@ -16,13 +15,13 @@ export const Prohra = () => {
       <div className="navbar_container">
         <nav className="victory_navigation">
           <Link to="/hra">
-            <img className="victory_button" src={Refresh} alt="hrat-znovu" />
+            <img className="victory_button" src={refresh} alt="Hrát znovu" />
           </Link>{' '}
           <Link to="/">
-            <img className="victory_button" src={Home} alt="domu" />
+            <img className="victory_button" src={home} alt="Domů" />
           </Link>{' '}
           <Link to="/pravidla">
-            <img className="victory_button" src={Question} alt="pravidla" />{' '}
+            <img className="victory_button" src={question} alt="Pravidla" />{' '}
           </Link>
         </nav>
         <Outlet />
