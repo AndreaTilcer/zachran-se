@@ -227,7 +227,7 @@
   }
 
   .resposive_path {
-    display: absolute;
+    display: block;
     top: 5vh;
   }
 }

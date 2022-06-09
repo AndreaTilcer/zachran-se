@@ -59,18 +59,18 @@ export const Situace = ({
 
   const drop = (ev) => {
     ev.preventDefault();
-    const correctAnswer = answers.filter(
-      (item) => item.id === Number(answerID),
-    );
+    getResult(ev);
+  };
+
+  const getIconID = (ev) => {
+    getResult(ev.target.id);
+  };
+
+  const getResult = (iconID) => {
+    const correctAnswer = answers.filter((item) => item.id === Number(iconID));
 
     setIsCorrect(correctAnswer[0].correct);
     setOpenWindow(true);
-  };
-
-  const onClickDrag = (ev) => {
-    (ev) => drag(ev);
-    (ev) => drop(ev);
-    (ev) => allowDrop(ev);
   };
 
   const navigate = useNavigate();
@@ -150,7 +150,7 @@ export const Situace = ({
                   <div className="icon_container">
                     <img
                       draggable="true"
-                      onClick={(ev) => onClickDrag(ev)}
+                      onClick={(ev) => getIconID(ev)}
                       onDragStart={(ev) => drag(ev)}
                       className="ikona_1"
                       key={item.id}
