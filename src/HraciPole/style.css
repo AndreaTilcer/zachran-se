@@ -154,8 +154,10 @@
   width: 70%;
 }
 
-.resposive_path {
-  display: none;
+@media screen and (min-width: 450px) {
+  .path.resposive_path {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
@@ -226,9 +228,13 @@
     width: 5rem;
   }
 
-  .resposive_path {
+  .path.resposive_path {
     display: block;
-    top: 5vh;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
   }
 
   .monkey2 {

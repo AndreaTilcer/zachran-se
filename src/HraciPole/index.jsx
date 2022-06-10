@@ -38,7 +38,7 @@ export const HraciPole = ({ onSelect, shouldMonkeyMove, n, i }) => {
     <>
       <div className="path">
         <img src={path} alt="Cesta" />
-        <img className="resposive_path" src={liana} alt="Cesta" />
+        <img className="path resposive_path" src={liana} alt="Cesta" />
       </div>
       {gamefieldIcons.map((item) => {
         return (
