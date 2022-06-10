@@ -144,24 +144,28 @@
   width: 5rem;
 }
 
-.path {
+.desktop_path {
   position: absolute;
   top: 17vh;
   left: 30%;
 }
 
-.path img {
+.desktop_path img {
   width: 70%;
 }
 
+.resposive_path {
+  display: none;
+}
+
 @media screen and (min-width: 450px) {
-  .path.resposive_path {
+  .resposive_path {
     display: none;
   }
 }
 
 @media (max-width: 450px) {
-  .path {
+  .desktop_path {
     display: none;
   }
 
@@ -228,7 +232,7 @@
     width: 5rem;
   }
 
-  .path.resposive_path {
+  .resposive_path {
     display: block;
     position: absolute;
     width: 100%;

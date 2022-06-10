@@ -73,7 +73,6 @@ export const Hra = () => {
     }
   };
 
-  const refresh = () => {};
 
   return (
     <>
