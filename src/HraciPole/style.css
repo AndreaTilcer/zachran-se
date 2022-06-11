@@ -7,10 +7,31 @@
   position: absolute;
 }
 
+.path {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop_path {
+width: 380px;
+position: absolute;
+top: 150px;
+left: 350px;
+right: 350px;
+}
+
+.resposive_path {
+  display: none;
+}
+
 .house {
   position: absolute;
-  top: 3vh;
-  left: 20vw;
+  top: 40px;
+  left: 220px;
+  right: 800px;
+  width: 150px;
 }
 
 .houseclick img:hover {
@@ -20,7 +41,9 @@
 
 .storm {
   position: absolute;
-  left: 43%;
+  left: 500px;
+  right: 400px;
+  width: 150px;
 }
 
 .stormclick img:hover {
@@ -30,8 +53,10 @@
 
 .electricity {
   position: absolute;
-  top: 3vh;
-  right: 25vw;
+  top: 40px;
+  right: 220px;
+  left: 700px;
+  width: 150px;
 }
 
 .electricityclick img:hover {
@@ -41,8 +66,10 @@
 
 .accident {
   position: absolute;
-  top: 23vh;
-  right: 15vw;
+  top: 190px;
+  right: 170px;
+  left: 780px;
+  width: 150px;
 }
 
 .accidentclick img:hover {
@@ -52,8 +79,10 @@
 
 .river {
   position: absolute;
-  top: 45vh;
-  right: 25vw;
+  top: 350px;
+  right: 280px;
+  left: 680px;
+  width: 150px;
 }
 
 .riverclick img:hover {
@@ -63,8 +92,10 @@
 
 .fireplace {
   position: absolute;
-  top: 62vh;
-  left: 43%;
+  top: 500px;
+  left: 500px;
+  right: 450px;
+  width: 150px;
 }
 
 .fireplaceclick img:hover {
@@ -74,8 +105,10 @@
 
 .burnt {
   position: absolute;
-  top: 45vh;
-  left: 20vw;
+  top: 370px;
+  left: 280px;
+  right: 680px;
+  width: 150px;
 }
 
 .burntclick img:hover {
@@ -85,8 +118,10 @@
 
 .snow {
   position: absolute;
-  top: 23vh;
-  left: 10vw;
+  top: 190px;
+  left: 180px;
+  right: 750px;
+  width: 150px;
 }
 
 .snowclick img:hover {
@@ -96,8 +131,9 @@
 
 .monkey1 {
   position: absolute;
-  left: 28vw;
-  top: 20vh;
+  left: 340px;
+  right: 800px;
+  top: 150px;
 }
 
 .monkey2 {
@@ -144,22 +180,441 @@
   width: 5rem;
 }
 
-.desktop_path {
-  position: absolute;
-  top: 17vh;
-  left: 65vh;
-  width: 30%;
+
+
+@media (max-width: 1100px) {
+  .gamefield_icon {
+    width: calc(7rem*0.9);
+  }
+  
+  .lock {
+    width: calc(3rem*0.9);
+  }
+  
+  .desktop_path {
+  width: calc(380px*0.9);
+  top: calc(150px*0.9);
+  left: calc(350px*0.9);
+  right:calc(350px*0.9);
+  }
+  
+  .house {
+    top: calc(40px*0.9);
+    left: calc(220px*0.9);
+    right: calc(800px*0.9);
+    width: calc(150px*0.9);
+  }
+  
+  .storm {
+    left: calc(500px*0.9);
+    right: calc(400px*0.9);
+    width: calc(150px*0.9);
+  }
+  
+  .electricity {
+    top: calc(40px*0.9);
+    right: calc(220px*0.9);
+    left: calc(700px*0.9);
+    width: calc(150px*0.9);
+  }
+  
+  
+  .accident {
+    top: calc(190px*0.9);
+    right: calc(170px*0.9);
+    left: calc(780px*0.9);
+    width: calc(150px*0.9);
+  }
+  
+  
+  .river {
+    top: calc(350px*0.9);
+    right: calc(280px*0.9);
+    left: calc(680px*0.9);
+    width: calc(150px*0.9);
+  }
+  
+  .fireplace {
+    top: calc(500px*0.9);
+    left: calc(500px*0.9);
+    right: calc(450px*0.9);
+    width: calc(150px*0.9);
+  }
+
+  
+  .burnt {
+    top: calc(370px*0.9);
+    left: calc(280px*0.9);
+    right: calc(680px*0.9);
+    width: calc(150px*0.9);
+  }
+
+  .snow {
+    top: calc(190px*0.9);
+    left: calc(180px*0.9);
+    right: calc(750px*0.9);
+    width: calc(150px*0.9);
+  }
+  .monkey1 {
+    left: calc(340px*0.9);
+    right: calc(800px*0.9);
+    top: calc(150px*0.9);
+  }
+  .monkey1 img {
+    width: calc(5rem*0.9);
+  }
 }
 
-.resposive_path {
-  display: none;
+@media (max-width: 1000px) {
+  .gamefield_icon {
+    width: calc(7rem*0.8);
+  }
+  
+  .lock {
+    width: calc(3rem*0.8);
+  }
+  
+  .desktop_path {
+  width: calc(380px*0.8);
+  top: calc(150px*0.8);
+  left: calc(350px*0.8);
+  right:calc(350px*0.8);
+  }
+  
+  .house {
+    top: calc(40px*0.8);
+    left: calc(220px*0.8);
+    right: calc(800px*0.8);
+    width: calc(150px*0.8);
+  }
+  
+  .storm {
+    left: calc(500px*0.8);
+    right: calc(400px*0.8);
+    width: calc(150px*0.8);
+  }
+  
+  .electricity {
+    top: calc(40px*0.8);
+    right: calc(220px*0.8);
+    left: calc(700px*0.8);
+    width: calc(150px*0.8);
+  }
+  
+  
+  .accident {
+    top: calc(190px*0.8);
+    right: calc(170px*0.8);
+    left: calc(780px*0.8);
+    width: calc(150px*0.8);
+  }
+  
+  
+  .river {
+    top: calc(350px*0.8);
+    right: calc(280px*0.8);
+    left: calc(680px*0.8);
+    width: calc(150px*0.8);
+  }
+  
+  .fireplace {
+    top: calc(500px*0.8);
+    left: calc(500px*0.8);
+    right: calc(450px*0.8);
+    width: calc(150px*0.8);
+  }
+
+  
+  .burnt {
+    top: calc(370px*0.8);
+    left: calc(280px*0.8);
+    right: calc(680px*0.8);
+    width: calc(150px*0.8);
+  }
+
+  .snow {
+    top: calc(190px*0.8);
+    left: calc(180px*0.8);
+    right: calc(750px*0.8);
+    width: calc(150px*0.8);
+  }
+  .monkey1 {
+    left: calc(340px*0.8);
+    right: calc(800px*0.8);
+    top: calc(150px*0.8);
+  }
+  .monkey1 img {
+    width: calc(5rem*0.8);
+  }
+
+
+} 
+
+@media (max-width: 900px) {
+  .gamefield_icon {
+    width: calc(7rem*0.7);
+  }
+  
+  .lock {
+    width: calc(3rem*0.7);
+  }
+  
+  .desktop_path {
+  width: calc(380px*0.7);
+  top: calc(150px*0.7);
+  left: calc(350px*0.7);
+  right:calc(350px*0.7);
+  }
+  
+  .house {
+    top: calc(40px*0.7);
+    left: calc(220px*0.7);
+    right: calc(800px*0.7);
+    width: calc(150px*0.7);
+  }
+  
+  .storm {
+    left: calc(500px*0.7);
+    right: calc(400px*0.7);
+    width: calc(150px*0.7);
+  }
+  
+  .electricity {
+    top: calc(40px*0.7);
+    right: calc(220px*0.7);
+    left: calc(700px*0.7);
+    width: calc(150px*0.7);
+  }
+  
+  
+  .accident {
+    top: calc(190px*0.7);
+    right: calc(170px*0.7);
+    left: calc(780px*0.7);
+    width: calc(150px*0.7);
+  }
+  
+  
+  .river {
+    top: calc(350px*0.7);
+    right: calc(280px*0.7);
+    left: calc(680px*0.7);
+    width: calc(150px*0.7);
+  }
+  
+  .fireplace {
+    top: calc(500px*0.7);
+    left: calc(500px*0.7);
+    right: calc(450px*0.7);
+    width: calc(150px*0.7);
+  }
+
+  
+  .burnt {
+    top: calc(370px*0.7);
+    left: calc(280px*0.7);
+    right: calc(680px*0.7);
+    width: calc(150px*0.7);
+  }
+
+  .snow {
+    top: calc(190px*0.7);
+    left: calc(180px*0.7);
+    right: calc(750px*0.7);
+    width: calc(150px*0.7);
+  }
+  .monkey1 {
+    left: calc(340px*0.7);
+    right: calc(800px*0.7);
+    top: calc(150px*0.7);
+  }
+  .monkey1 img {
+    width: calc(5rem*0.7);
+  }
+
+
+} 
+
+@media (max-width: 800px) {
+  .gamefield_icon {
+    width: calc(7rem*0.6);
+  }
+  
+  .lock {
+    width: calc(3rem*0.6);
+  }
+  
+  .desktop_path {
+  width: calc(380px*0.6);
+  top: calc(150px*0.6);
+  left: calc(350px*0.6);
+  right:calc(350px*0.6);
+  }
+  
+  .house {
+    top: calc(40px*0.6);
+    left: calc(220px*0.6);
+    right: calc(800px*0.6);
+    width: calc(150px*0.6);
+  }
+  
+  .storm {
+    left: calc(500px*0.6);
+    right: calc(400px*0.6);
+    width: calc(150px*0.6);
+  }
+  
+  .electricity {
+    top: calc(40px*0.6);
+    right: calc(220px*0.6);
+    left: calc(700px*0.6);
+    width: calc(150px*0.6);
+  }
+  
+  
+  .accident {
+    top: calc(190px*0.6);
+    right: calc(170px*0.6);
+    left: calc(780px*0.6);
+    width: calc(150px*0.6);
+  }
+  
+  
+  .river {
+    top: calc(350px*0.6);
+    right: calc(280px*0.6);
+    left: calc(680px*0.6);
+    width: calc(150px*0.6);
+  }
+  
+  .fireplace {
+    top: calc(500px*0.6);
+    left: calc(500px*0.6);
+    right: calc(450px*0.6);
+    width: calc(150px*0.6);
+  }
+
+  
+  .burnt {
+    top: calc(370px*0.6);
+    left: calc(280px*0.6);
+    right: calc(680px*0.6);
+    width: calc(150px*0.6);
+  }
+
+  .snow {
+    top: calc(190px*0.6);
+    left: calc(180px*0.6);
+    right: calc(750px*0.6);
+    width: calc(150px*0.6);
+  }
+  .monkey1 {
+    left: calc(340px*0.6);
+    right: calc(800px*0.6);
+    top: calc(150px*0.6);
+  }
+  .monkey1 img {
+    width: calc(5rem*0.6);
+  }
+
+
+} 
+
+@media (max-width: 700px) {
+  .gamefield_icon {
+    width: calc(7rem*0.5);
+  }
+  
+  .lock {
+    width: calc(3rem*0.5);
+  }
+  
+  .desktop_path {
+  width: calc(380px*0.5);
+  top: calc(150px*0.5);
+  left: calc(350px*0.5);
+  right:calc(350px*0.5);
+  }
+  
+  .house {
+    top: calc(40px*0.5);
+    left: calc(220px*0.5);
+    right: calc(800px*0.5);
+    width: calc(150px*0.5);
+  }
+  
+  .storm {
+    left: calc(500px*0.5);
+    right: calc(400px*0.5);
+    width: calc(150px*0.5);
+  }
+  
+  .electricity {
+    top: calc(40px*0.5);
+    right: calc(220px*0.5);
+    left: calc(700px*0.5);
+    width: calc(150px*0.5);
+  }
+  
+  
+  .accident {
+    top: calc(190px*0.5);
+    right: calc(170px*0.5);
+    left: calc(780px*0.5);
+    width: calc(150px*0.5);
+  }
+  
+  
+  .river {
+    top: calc(350px*0.5);
+    right: calc(280px*0.5);
+    left: calc(680px*0.5);
+    width: calc(150px*0.5);
+  }
+  
+  .fireplace {
+    top: calc(500px*0.5);
+    left: calc(500px*0.5);
+    right: calc(450px*0.5);
+    width: calc(150px*0.5);
+  }
+
+  
+  .burnt {
+    top: calc(370px*0.5);
+    left: calc(280px*0.5);
+    right: calc(680px*0.5);
+    width: calc(150px*0.5);
+  }
+
+  .snow {
+    top: calc(190px*0.5);
+    left: calc(180px*0.5);
+    right: calc(750px*0.5);
+    width: calc(150px*0.5);
+  }
+  .monkey1 {
+    left: calc(340px*0.5);
+    right: calc(800px*0.5);
+    top: calc(150px*0.5);
+  }
+  .monkey1 img {
+    width: calc(5rem*0.5);
+  }
+
+
 }
 
-@media (max-width: 450px) {
+
+@media (max-width: 600px) {
   .desktop_path {
     display: none;
   }
 
+  .gamefield_icon {
+    width: 7rem;
+  }
+  
   .lock {
     width: 2rem;
     position: absolute;
@@ -169,58 +624,71 @@
     position: absolute;
     top: 10px;
     left: 33vw;
+    width: 150px;
   }
 
   .storm {
     position: absolute;
     left: 33vw;
     top: 162px;
+    width: 150px;
   }
 
   .electricity {
     position: absolute;
     top: 314px;
     left: 33vw;
+    width: 150px;
   }
 
   .accident {
     position: absolute;
     top: 466px;
     left: 33vw;
+    width: 150px;
   }
 
   .river {
     position: absolute;
     top: 618px;
     left: 33vw;
+    width: 150px;
   }
 
   .fireplace {
     position: absolute;
     top: 770px;
     left: 33vw;
+    width: 150px;
   }
 
   .burnt {
     position: absolute;
     top: 922px;
     left: 33vw;
+    width: 150px;
   }
 
   .snow {
     position: absolute;
     top: 1074px;
     left: 33vw;
+    width: 150px;
   }
 
   .monkey1 {
     position: absolute;
     left: 15vw;
     top: 10vh;
+    width: 150px;
   }
 
   .monkey1 img {
     width: 5rem;
+  }
+
+  .path {
+    position: absolute;
   }
 
   .resposive_path {
@@ -232,156 +700,5 @@
     margin-left: 0px;
   }
 
-  .monkey2 {
-    transform: translate(0%, 120%);
-    transition: transform 700ms ease-in-out 25ms;
-  }
-
-  .monkey3 {
-    transform: translate(0%, 350%);
-    transition: transform 700ms ease-in-out 25ms;
-  }
-
-  .monkey4 {
-    transform: translate(0%, 520%);
-    transition: transform 700ms ease-in-out 25ms;
-  }
-
-  .monkey5 {
-    transform: translate(0%, 710%);
-    transition: transform 700ms ease-in-out 25ms;
-  }
-
-  .monkey6 {
-    transform: translate(0%, 890%);
-    transition: transform 700ms ease-in-out 25ms;
-  }
-
-  .monkey7 {
-    transform: translate(0%, 1080%);
-    transition: transform 700ms ease-in-out 25ms;
-  }
-
-  .monkey8 {
-    transform: translate(0%, 1250%);
-    transition: transform 700ms ease-in-out 25ms;
-  }
-
-  .monkey9 {
-    transform: translate(0%, 1300%);
-    transition: transform 700ms ease-in-out 25ms;
-  }
 }
 
-@media (min-width: 1300px) {
-  .gamefield_icon {
-    width: 10rem;
-  }
-
-  .lock {
-    width: 3rem;
-    position: absolute;
-  }
-
-  .house {
-    position: absolute;
-    top: 3vh;
-    left: 20vw;
-  }
-
-  .houseclick img:hover {
-    cursor: pointer;
-    transform: scaleX(1.5) scaleY(1.5);
-  }
-
-  .storm {
-    position: absolute;
-    left: 43%;
-  }
-
-  .stormclick img:hover {
-    cursor: pointer;
-    transform: scaleX(1.5) scaleY(1.5);
-  }
-
-  .electricity {
-    position: absolute;
-    top: 3vh;
-    right: 25vw;
-  }
-
-  .electricityclick img:hover {
-    cursor: pointer;
-    transform: scaleX(1.5) scaleY(1.5);
-  }
-
-  .accident {
-    position: absolute;
-    top: 23vh;
-    right: 15vw;
-  }
-
-  .accidentclick img:hover {
-    cursor: pointer;
-    transform: scaleX(1.5) scaleY(1.5);
-  }
-
-  .river {
-    position: absolute;
-    top: 45vh;
-    right: 25vw;
-  }
-
-  .riverclick img:hover {
-    cursor: pointer;
-    transform: scaleX(1.5) scaleY(1.5);
-  }
-
-  .fireplace {
-    position: absolute;
-    top: 62vh;
-    left: 43%;
-  }
-
-  .fireplaceclick img:hover {
-    cursor: pointer;
-    transform: scaleX(1.5) scaleY(1.5);
-  }
-
-  .burnt {
-    position: absolute;
-    top: 45vh;
-    left: 20vw;
-  }
-
-  .burntclick img:hover {
-    cursor: pointer;
-    transform: scaleX(1.5) scaleY(1.5);
-  }
-
-  .snow {
-    position: absolute;
-    top: 23vh;
-    left: 10vw;
-  }
-
-  .snowclick img:hover {
-    cursor: pointer;
-    transform: scaleX(1.5) scaleY(1.5);
-  }
-
-  .monkey1 {
-    position: absolute;
-    left: 28vw;
-    top: 20vh;
-  }
-  .monkey1 img {
-    width: 7rem;
-  }
-
-  .desktop_path {
-    top: 13vh;
-    left: 53vh;
-    width: 35%;
-  }
-}

@@ -3,13 +3,7 @@ import './style.css';
 import monkey from '../img/monkey.svg';
 import path from './img/cesta.png';
 import lock from './img/lock.svg';
-<<<<<<< HEAD
-import liana from './img/liana.svg';
-=======
 import liana from './img/liana.png';
-import monkey1 from './img/monkey-plaster.png';
-import monkey2 from './img/monkey-bandage.png';
->>>>>>> cfce9bd79e5d691ae86925f44808dff886c5060d
 import { gamefieldIcons } from '../databaze';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -29,11 +23,10 @@ export const HraciPole = ({ onSelect, shouldMonkeyMove, n, player }) => {
 
   return (
     <>
-      <div>
+      <div className='path'>
         <img className="desktop_path" src={path} alt="Cesta" />
         <img className="resposive_path" src={liana} alt="Cesta" />
-      </div>
-      {gamefieldIcons.map((item) => {
+        {gamefieldIcons.map((item) => {
         return (
           <div
             className={
@@ -58,6 +51,8 @@ export const HraciPole = ({ onSelect, shouldMonkeyMove, n, player }) => {
           </div>
         );
       })}
+      </div>
+     
 
       <div className="monkey1" id="player">
         <img src={player} alt="Hráč" />
