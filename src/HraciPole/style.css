@@ -15,11 +15,11 @@
 }
 
 .desktop_path {
-width: 380px;
-position: absolute;
-top: 150px;
-left: 350px;
-right: 350px;
+  width: 380px;
+  position: absolute;
+  top: 150px;
+  left: 350px;
+  right: 350px;
 }
 
 .resposive_path {
@@ -180,431 +180,405 @@ right: 350px;
   width: 5rem;
 }
 
-
-
 @media (max-width: 1100px) {
   .gamefield_icon {
-    width: calc(7rem*0.9);
-  }
-  
-  .lock {
-    width: calc(3rem*0.9);
-  }
-  
-  .desktop_path {
-  width: calc(380px*0.9);
-  top: calc(150px*0.9);
-  left: calc(350px*0.9);
-  right:calc(350px*0.9);
-  }
-  
-  .house {
-    top: calc(40px*0.9);
-    left: calc(220px*0.9);
-    right: calc(800px*0.9);
-    width: calc(150px*0.9);
-  }
-  
-  .storm {
-    left: calc(500px*0.9);
-    right: calc(400px*0.9);
-    width: calc(150px*0.9);
-  }
-  
-  .electricity {
-    top: calc(40px*0.9);
-    right: calc(220px*0.9);
-    left: calc(700px*0.9);
-    width: calc(150px*0.9);
-  }
-  
-  
-  .accident {
-    top: calc(190px*0.9);
-    right: calc(170px*0.9);
-    left: calc(780px*0.9);
-    width: calc(150px*0.9);
-  }
-  
-  
-  .river {
-    top: calc(350px*0.9);
-    right: calc(280px*0.9);
-    left: calc(680px*0.9);
-    width: calc(150px*0.9);
-  }
-  
-  .fireplace {
-    top: calc(500px*0.9);
-    left: calc(500px*0.9);
-    right: calc(450px*0.9);
-    width: calc(150px*0.9);
+    width: calc(7rem * 0.9);
   }
 
-  
+  .lock {
+    width: calc(3rem * 0.9);
+  }
+
+  .desktop_path {
+    width: calc(380px * 0.9);
+    top: calc(150px * 0.9);
+    left: calc(350px * 0.9);
+    right: calc(350px * 0.9);
+  }
+
+  .house {
+    top: calc(40px * 0.9);
+    left: calc(220px * 0.9);
+    right: calc(800px * 0.9);
+    width: calc(150px * 0.9);
+  }
+
+  .storm {
+    left: calc(500px * 0.9);
+    right: calc(400px * 0.9);
+    width: calc(150px * 0.9);
+  }
+
+  .electricity {
+    top: calc(40px * 0.9);
+    right: calc(220px * 0.9);
+    left: calc(700px * 0.9);
+    width: calc(150px * 0.9);
+  }
+
+  .accident {
+    top: calc(190px * 0.9);
+    right: calc(170px * 0.9);
+    left: calc(780px * 0.9);
+    width: calc(150px * 0.9);
+  }
+
+  .river {
+    top: calc(350px * 0.9);
+    right: calc(280px * 0.9);
+    left: calc(680px * 0.9);
+    width: calc(150px * 0.9);
+  }
+
+  .fireplace {
+    top: calc(500px * 0.9);
+    left: calc(500px * 0.9);
+    right: calc(450px * 0.9);
+    width: calc(150px * 0.9);
+  }
+
   .burnt {
-    top: calc(370px*0.9);
-    left: calc(280px*0.9);
-    right: calc(680px*0.9);
-    width: calc(150px*0.9);
+    top: calc(370px * 0.9);
+    left: calc(280px * 0.9);
+    right: calc(680px * 0.9);
+    width: calc(150px * 0.9);
   }
 
   .snow {
-    top: calc(190px*0.9);
-    left: calc(180px*0.9);
-    right: calc(750px*0.9);
-    width: calc(150px*0.9);
+    top: calc(190px * 0.9);
+    left: calc(180px * 0.9);
+    right: calc(750px * 0.9);
+    width: calc(150px * 0.9);
   }
   .monkey1 {
-    left: calc(340px*0.9);
-    right: calc(800px*0.9);
-    top: calc(150px*0.9);
+    left: calc(340px * 0.9);
+    right: calc(800px * 0.9);
+    top: calc(150px * 0.9);
   }
   .monkey1 img {
-    width: calc(5rem*0.9);
+    width: calc(5rem * 0.9);
   }
 }
 
 @media (max-width: 1000px) {
   .gamefield_icon {
-    width: calc(7rem*0.8);
-  }
-  
-  .lock {
-    width: calc(3rem*0.8);
-  }
-  
-  .desktop_path {
-  width: calc(380px*0.8);
-  top: calc(150px*0.8);
-  left: calc(350px*0.8);
-  right:calc(350px*0.8);
-  }
-  
-  .house {
-    top: calc(40px*0.8);
-    left: calc(220px*0.8);
-    right: calc(800px*0.8);
-    width: calc(150px*0.8);
-  }
-  
-  .storm {
-    left: calc(500px*0.8);
-    right: calc(400px*0.8);
-    width: calc(150px*0.8);
-  }
-  
-  .electricity {
-    top: calc(40px*0.8);
-    right: calc(220px*0.8);
-    left: calc(700px*0.8);
-    width: calc(150px*0.8);
-  }
-  
-  
-  .accident {
-    top: calc(190px*0.8);
-    right: calc(170px*0.8);
-    left: calc(780px*0.8);
-    width: calc(150px*0.8);
-  }
-  
-  
-  .river {
-    top: calc(350px*0.8);
-    right: calc(280px*0.8);
-    left: calc(680px*0.8);
-    width: calc(150px*0.8);
-  }
-  
-  .fireplace {
-    top: calc(500px*0.8);
-    left: calc(500px*0.8);
-    right: calc(450px*0.8);
-    width: calc(150px*0.8);
+    width: calc(7rem * 0.8);
   }
 
-  
+  .lock {
+    width: calc(3rem * 0.8);
+  }
+
+  .desktop_path {
+    width: calc(380px * 0.8);
+    top: calc(150px * 0.8);
+    left: calc(350px * 0.8);
+    right: calc(350px * 0.8);
+  }
+
+  .house {
+    top: calc(40px * 0.8);
+    left: calc(220px * 0.8);
+    right: calc(800px * 0.8);
+    width: calc(150px * 0.8);
+  }
+
+  .storm {
+    left: calc(500px * 0.8);
+    right: calc(400px * 0.8);
+    width: calc(150px * 0.8);
+  }
+
+  .electricity {
+    top: calc(40px * 0.8);
+    right: calc(220px * 0.8);
+    left: calc(700px * 0.8);
+    width: calc(150px * 0.8);
+  }
+
+  .accident {
+    top: calc(190px * 0.8);
+    right: calc(170px * 0.8);
+    left: calc(780px * 0.8);
+    width: calc(150px * 0.8);
+  }
+
+  .river {
+    top: calc(350px * 0.8);
+    right: calc(280px * 0.8);
+    left: calc(680px * 0.8);
+    width: calc(150px * 0.8);
+  }
+
+  .fireplace {
+    top: calc(500px * 0.8);
+    left: calc(500px * 0.8);
+    right: calc(450px * 0.8);
+    width: calc(150px * 0.8);
+  }
+
   .burnt {
-    top: calc(370px*0.8);
-    left: calc(280px*0.8);
-    right: calc(680px*0.8);
-    width: calc(150px*0.8);
+    top: calc(370px * 0.8);
+    left: calc(280px * 0.8);
+    right: calc(680px * 0.8);
+    width: calc(150px * 0.8);
   }
 
   .snow {
-    top: calc(190px*0.8);
-    left: calc(180px*0.8);
-    right: calc(750px*0.8);
-    width: calc(150px*0.8);
+    top: calc(190px * 0.8);
+    left: calc(180px * 0.8);
+    right: calc(750px * 0.8);
+    width: calc(150px * 0.8);
   }
   .monkey1 {
-    left: calc(340px*0.8);
-    right: calc(800px*0.8);
-    top: calc(150px*0.8);
+    left: calc(340px * 0.8);
+    right: calc(800px * 0.8);
+    top: calc(150px * 0.8);
   }
   .monkey1 img {
-    width: calc(5rem*0.8);
+    width: calc(5rem * 0.8);
   }
-
-
-} 
+}
 
 @media (max-width: 900px) {
   .gamefield_icon {
-    width: calc(7rem*0.7);
-  }
-  
-  .lock {
-    width: calc(3rem*0.7);
-  }
-  
-  .desktop_path {
-  width: calc(380px*0.7);
-  top: calc(150px*0.7);
-  left: calc(350px*0.7);
-  right:calc(350px*0.7);
-  }
-  
-  .house {
-    top: calc(40px*0.7);
-    left: calc(220px*0.7);
-    right: calc(800px*0.7);
-    width: calc(150px*0.7);
-  }
-  
-  .storm {
-    left: calc(500px*0.7);
-    right: calc(400px*0.7);
-    width: calc(150px*0.7);
-  }
-  
-  .electricity {
-    top: calc(40px*0.7);
-    right: calc(220px*0.7);
-    left: calc(700px*0.7);
-    width: calc(150px*0.7);
-  }
-  
-  
-  .accident {
-    top: calc(190px*0.7);
-    right: calc(170px*0.7);
-    left: calc(780px*0.7);
-    width: calc(150px*0.7);
-  }
-  
-  
-  .river {
-    top: calc(350px*0.7);
-    right: calc(280px*0.7);
-    left: calc(680px*0.7);
-    width: calc(150px*0.7);
-  }
-  
-  .fireplace {
-    top: calc(500px*0.7);
-    left: calc(500px*0.7);
-    right: calc(450px*0.7);
-    width: calc(150px*0.7);
+    width: calc(7rem * 0.7);
   }
 
-  
+  .lock {
+    width: calc(3rem * 0.7);
+  }
+
+  .desktop_path {
+    width: calc(380px * 0.7);
+    top: calc(150px * 0.7);
+    left: calc(350px * 0.7);
+    right: calc(350px * 0.7);
+  }
+
+  .house {
+    top: calc(40px * 0.7);
+    left: calc(220px * 0.7);
+    right: calc(800px * 0.7);
+    width: calc(150px * 0.7);
+  }
+
+  .storm {
+    left: calc(500px * 0.7);
+    right: calc(400px * 0.7);
+    width: calc(150px * 0.7);
+  }
+
+  .electricity {
+    top: calc(40px * 0.7);
+    right: calc(220px * 0.7);
+    left: calc(700px * 0.7);
+    width: calc(150px * 0.7);
+  }
+
+  .accident {
+    top: calc(190px * 0.7);
+    right: calc(170px * 0.7);
+    left: calc(780px * 0.7);
+    width: calc(150px * 0.7);
+  }
+
+  .river {
+    top: calc(350px * 0.7);
+    right: calc(280px * 0.7);
+    left: calc(680px * 0.7);
+    width: calc(150px * 0.7);
+  }
+
+  .fireplace {
+    top: calc(500px * 0.7);
+    left: calc(500px * 0.7);
+    right: calc(450px * 0.7);
+    width: calc(150px * 0.7);
+  }
+
   .burnt {
-    top: calc(370px*0.7);
-    left: calc(280px*0.7);
-    right: calc(680px*0.7);
-    width: calc(150px*0.7);
+    top: calc(370px * 0.7);
+    left: calc(280px * 0.7);
+    right: calc(680px * 0.7);
+    width: calc(150px * 0.7);
   }
 
   .snow {
-    top: calc(190px*0.7);
-    left: calc(180px*0.7);
-    right: calc(750px*0.7);
-    width: calc(150px*0.7);
+    top: calc(190px * 0.7);
+    left: calc(180px * 0.7);
+    right: calc(750px * 0.7);
+    width: calc(150px * 0.7);
   }
   .monkey1 {
-    left: calc(340px*0.7);
-    right: calc(800px*0.7);
-    top: calc(150px*0.7);
+    left: calc(340px * 0.7);
+    right: calc(800px * 0.7);
+    top: calc(150px * 0.7);
   }
   .monkey1 img {
-    width: calc(5rem*0.7);
+    width: calc(5rem * 0.7);
   }
-
-
-} 
+}
 
 @media (max-width: 800px) {
   .gamefield_icon {
-    width: calc(7rem*0.6);
-  }
-  
-  .lock {
-    width: calc(3rem*0.6);
-  }
-  
-  .desktop_path {
-  width: calc(380px*0.6);
-  top: calc(150px*0.6);
-  left: calc(350px*0.6);
-  right:calc(350px*0.6);
-  }
-  
-  .house {
-    top: calc(40px*0.6);
-    left: calc(220px*0.6);
-    right: calc(800px*0.6);
-    width: calc(150px*0.6);
-  }
-  
-  .storm {
-    left: calc(500px*0.6);
-    right: calc(400px*0.6);
-    width: calc(150px*0.6);
-  }
-  
-  .electricity {
-    top: calc(40px*0.6);
-    right: calc(220px*0.6);
-    left: calc(700px*0.6);
-    width: calc(150px*0.6);
-  }
-  
-  
-  .accident {
-    top: calc(190px*0.6);
-    right: calc(170px*0.6);
-    left: calc(780px*0.6);
-    width: calc(150px*0.6);
-  }
-  
-  
-  .river {
-    top: calc(350px*0.6);
-    right: calc(280px*0.6);
-    left: calc(680px*0.6);
-    width: calc(150px*0.6);
-  }
-  
-  .fireplace {
-    top: calc(500px*0.6);
-    left: calc(500px*0.6);
-    right: calc(450px*0.6);
-    width: calc(150px*0.6);
+    width: calc(7rem * 0.6);
   }
 
-  
+  .lock {
+    width: calc(3rem * 0.6);
+  }
+
+  .desktop_path {
+    width: calc(380px * 0.6);
+    top: calc(150px * 0.6);
+    left: calc(350px * 0.6);
+    right: calc(350px * 0.6);
+  }
+
+  .house {
+    top: calc(40px * 0.6);
+    left: calc(220px * 0.6);
+    right: calc(800px * 0.6);
+    width: calc(150px * 0.6);
+  }
+
+  .storm {
+    left: calc(500px * 0.6);
+    right: calc(400px * 0.6);
+    width: calc(150px * 0.6);
+  }
+
+  .electricity {
+    top: calc(40px * 0.6);
+    right: calc(220px * 0.6);
+    left: calc(700px * 0.6);
+    width: calc(150px * 0.6);
+  }
+
+  .accident {
+    top: calc(190px * 0.6);
+    right: calc(170px * 0.6);
+    left: calc(780px * 0.6);
+    width: calc(150px * 0.6);
+  }
+
+  .river {
+    top: calc(350px * 0.6);
+    right: calc(280px * 0.6);
+    left: calc(680px * 0.6);
+    width: calc(150px * 0.6);
+  }
+
+  .fireplace {
+    top: calc(500px * 0.6);
+    left: calc(500px * 0.6);
+    right: calc(450px * 0.6);
+    width: calc(150px * 0.6);
+  }
+
   .burnt {
-    top: calc(370px*0.6);
-    left: calc(280px*0.6);
-    right: calc(680px*0.6);
-    width: calc(150px*0.6);
+    top: calc(370px * 0.6);
+    left: calc(280px * 0.6);
+    right: calc(680px * 0.6);
+    width: calc(150px * 0.6);
   }
 
   .snow {
-    top: calc(190px*0.6);
-    left: calc(180px*0.6);
-    right: calc(750px*0.6);
-    width: calc(150px*0.6);
+    top: calc(190px * 0.6);
+    left: calc(180px * 0.6);
+    right: calc(750px * 0.6);
+    width: calc(150px * 0.6);
   }
   .monkey1 {
-    left: calc(340px*0.6);
-    right: calc(800px*0.6);
-    top: calc(150px*0.6);
+    left: calc(340px * 0.6);
+    right: calc(800px * 0.6);
+    top: calc(150px * 0.6);
   }
   .monkey1 img {
-    width: calc(5rem*0.6);
+    width: calc(5rem * 0.6);
   }
-
-
-} 
+}
 
 @media (max-width: 700px) {
   .gamefield_icon {
-    width: calc(7rem*0.5);
-  }
-  
-  .lock {
-    width: calc(3rem*0.5);
-  }
-  
-  .desktop_path {
-  width: calc(380px*0.5);
-  top: calc(150px*0.5);
-  left: calc(350px*0.5);
-  right:calc(350px*0.5);
-  }
-  
-  .house {
-    top: calc(40px*0.5);
-    left: calc(220px*0.5);
-    right: calc(800px*0.5);
-    width: calc(150px*0.5);
-  }
-  
-  .storm {
-    left: calc(500px*0.5);
-    right: calc(400px*0.5);
-    width: calc(150px*0.5);
-  }
-  
-  .electricity {
-    top: calc(40px*0.5);
-    right: calc(220px*0.5);
-    left: calc(700px*0.5);
-    width: calc(150px*0.5);
-  }
-  
-  
-  .accident {
-    top: calc(190px*0.5);
-    right: calc(170px*0.5);
-    left: calc(780px*0.5);
-    width: calc(150px*0.5);
-  }
-  
-  
-  .river {
-    top: calc(350px*0.5);
-    right: calc(280px*0.5);
-    left: calc(680px*0.5);
-    width: calc(150px*0.5);
-  }
-  
-  .fireplace {
-    top: calc(500px*0.5);
-    left: calc(500px*0.5);
-    right: calc(450px*0.5);
-    width: calc(150px*0.5);
+    width: calc(7rem * 0.5);
   }
 
-  
+  .lock {
+    width: calc(3rem * 0.5);
+  }
+
+  .desktop_path {
+    width: calc(380px * 0.5);
+    top: calc(150px * 0.5);
+    left: calc(350px * 0.5);
+    right: calc(350px * 0.5);
+  }
+
+  .house {
+    top: calc(40px * 0.5);
+    left: calc(220px * 0.5);
+    right: calc(800px * 0.5);
+    width: calc(150px * 0.5);
+  }
+
+  .storm {
+    left: calc(500px * 0.5);
+    right: calc(400px * 0.5);
+    width: calc(150px * 0.5);
+  }
+
+  .electricity {
+    top: calc(40px * 0.5);
+    right: calc(220px * 0.5);
+    left: calc(700px * 0.5);
+    width: calc(150px * 0.5);
+  }
+
+  .accident {
+    top: calc(190px * 0.5);
+    right: calc(170px * 0.5);
+    left: calc(780px * 0.5);
+    width: calc(150px * 0.5);
+  }
+
+  .river {
+    top: calc(350px * 0.5);
+    right: calc(280px * 0.5);
+    left: calc(680px * 0.5);
+    width: calc(150px * 0.5);
+  }
+
+  .fireplace {
+    top: calc(500px * 0.5);
+    left: calc(500px * 0.5);
+    right: calc(450px * 0.5);
+    width: calc(150px * 0.5);
+  }
+
   .burnt {
-    top: calc(370px*0.5);
-    left: calc(280px*0.5);
-    right: calc(680px*0.5);
-    width: calc(150px*0.5);
+    top: calc(370px * 0.5);
+    left: calc(280px * 0.5);
+    right: calc(680px * 0.5);
+    width: calc(150px * 0.5);
   }
 
   .snow {
-    top: calc(190px*0.5);
-    left: calc(180px*0.5);
-    right: calc(750px*0.5);
-    width: calc(150px*0.5);
+    top: calc(190px * 0.5);
+    left: calc(180px * 0.5);
+    right: calc(750px * 0.5);
+    width: calc(150px * 0.5);
   }
   .monkey1 {
-    left: calc(340px*0.5);
-    right: calc(800px*0.5);
-    top: calc(150px*0.5);
+    left: calc(340px * 0.5);
+    right: calc(800px * 0.5);
+    top: calc(150px * 0.5);
   }
   .monkey1 img {
-    width: calc(5rem*0.5);
+    width: calc(5rem * 0.5);
   }
-
-
 }
-
 
 @media (max-width: 600px) {
   .desktop_path {
@@ -614,7 +588,7 @@ right: 350px;
   .gamefield_icon {
     width: 7rem;
   }
-  
+
   .lock {
     width: 2rem;
     position: absolute;
@@ -699,6 +673,4 @@ right: 350px;
     margin: 0px;
     margin-left: 0px;
   }
-
 }
-
