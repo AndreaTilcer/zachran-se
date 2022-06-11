@@ -16,6 +16,8 @@ import tree1 from './img/tree1.svg';
 import tree2 from './img/tree2.svg';
 import tree3 from './img/tree3.svg';
 import tree4 from './img/tree4.svg';
+import monkey1 from './img/monkey-plaster.png';
+import monkey2 from './img/monkey-bandage.png';
 import { HraciPole } from '../HraciPole';
 import { Situace } from '../Situace';
 import { situations } from '../databaze';
@@ -43,6 +45,7 @@ export const Hra = () => {
   const [shouldMonkeyMove, setShouldMonkeyMove] = useState(false);
 
   const [n, setN] = useState(1);
+
 
   const handleContinue = () => {
     isAnswerCorrect ? setShouldMonkeyMove(true) : null;
@@ -73,6 +76,20 @@ export const Hra = () => {
     }
   };
 
+  const [player, setPlayer] = useState(null);
+
+  useEffect(() => {
+    if (i < 3) {
+      setPlayer(monkey);
+    } else if (i >= 3 && i <= 4) {
+      setPlayer(monkey1);
+    } else {
+      setPlayer(monkey2);
+    }
+  }, [i]);
+
+
+
 
   return (
     <>
@@ -86,7 +103,7 @@ export const Hra = () => {
           </Link>
         </nav>
         <div className="lifebar">
-          <img className="lifebar_monkey" src={monkey} alt="Opička" />
+          <img className="lifebar_monkey" src={player} alt="Opička" />
           {lifebar.map((item) => (
             <img src={item} className="lifebar_heart" />
           ))}
@@ -112,7 +129,7 @@ export const Hra = () => {
               onSelect={handleOnSelect}
               shouldMonkeyMove={shouldMonkeyMove}
               n={n}
-              i={i}
+              player={player}
             />
           ) : (
             <Situace
