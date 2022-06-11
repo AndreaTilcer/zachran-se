@@ -64,7 +64,7 @@ export const Hra = () => {
     navigate('/vyhra');
   };
 
-  n === 9 ? setTimeout(navigateVyhra, 1500) : null;
+  n === 9 ? setTimeout(navigateVyhra, 2500) : null;
 
   const removeLife = () => {
     setI(i + 1);
