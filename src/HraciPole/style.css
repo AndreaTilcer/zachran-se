@@ -147,21 +147,12 @@
 .desktop_path {
   position: absolute;
   top: 17vh;
-  left: 30%;
-}
-
-.desktop_path img {
-  width: 70%;
+  left: 65vh;
+  width: 30%;
 }
 
 .resposive_path {
   display: none;
-}
-
-@media screen and (min-width: 450px) {
-  .resposive_path {
-    display: none;
-  }
 }
 
 @media (max-width: 450px) {
@@ -236,9 +227,9 @@
     display: block;
     position: absolute;
     width: 100%;
-    top: 0px;
-    left: 0px;
+
     margin: 0px;
+    margin-left: 0px;
   }
 
   .monkey2 {
@@ -279,5 +270,118 @@
   .monkey9 {
     transform: translate(0%, 1300%);
     transition: transform 700ms ease-in-out 25ms;
+  }
+}
+
+@media (min-width: 1300px) {
+  .gamefield_icon {
+    width: 10rem;
+  }
+
+  .lock {
+    width: 3rem;
+    position: absolute;
+  }
+
+  .house {
+    position: absolute;
+    top: 3vh;
+    left: 20vw;
+  }
+
+  .houseclick img:hover {
+    cursor: pointer;
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+
+  .storm {
+    position: absolute;
+    left: 43%;
+  }
+
+  .stormclick img:hover {
+    cursor: pointer;
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+
+  .electricity {
+    position: absolute;
+    top: 3vh;
+    right: 25vw;
+  }
+
+  .electricityclick img:hover {
+    cursor: pointer;
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+
+  .accident {
+    position: absolute;
+    top: 23vh;
+    right: 15vw;
+  }
+
+  .accidentclick img:hover {
+    cursor: pointer;
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+
+  .river {
+    position: absolute;
+    top: 45vh;
+    right: 25vw;
+  }
+
+  .riverclick img:hover {
+    cursor: pointer;
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+
+  .fireplace {
+    position: absolute;
+    top: 62vh;
+    left: 43%;
+  }
+
+  .fireplaceclick img:hover {
+    cursor: pointer;
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+
+  .burnt {
+    position: absolute;
+    top: 45vh;
+    left: 20vw;
+  }
+
+  .burntclick img:hover {
+    cursor: pointer;
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+
+  .snow {
+    position: absolute;
+    top: 23vh;
+    left: 10vw;
+  }
+
+  .snowclick img:hover {
+    cursor: pointer;
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+
+  .monkey1 {
+    position: absolute;
+    left: 28vw;
+    top: 20vh;
+  }
+  .monkey1 img {
+    width: 7rem;
+  }
+
+  .desktop_path {
+    top: 13vh;
+    left: 53vh;
+    width: 35%;
   }
 }

@@ -35,6 +35,7 @@
 .correct_answer_container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .answers.correct {
@@ -152,5 +153,46 @@
   .answers.correct {
     width: 300px;
     padding: 0px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .situace_container {
+    min-height: 700px;
+  }
+
+  .heading_2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 36px;
+  }
+
+  .situace_1 {
+    width: 400px;
+  }
+
+  .situace_2 {
+    width: 350px;
+  }
+
+  .icon_container {
+    width: 750px;
+    max-width: 300px;
+  }
+
+  .ikona_1 {
+    width: 4.5rem;
+  }
+
+  .answers {
+    font-size: 18px;
+  }
+
+  .answers.correct {
+    width: 750px;
+    font-size: 18px;
+  }
+
+  .heading_3 {
+    font-size: 30px;
   }
 }

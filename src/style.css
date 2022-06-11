@@ -19,6 +19,7 @@ body {
 .heading {
   font-family: 'Amatic SC', cursive;
   font-size: 60px;
+  padding-top: 18vh;
 }
 
 .homepage_button {
@@ -44,11 +45,15 @@ body {
 }
 
 @media (max-width: 450px) {
+  .heading {
+    padding-top: 5vh;
+  }
+
   .homepage_monkey {
-    max-width: 250px;
+    max-width: 220px;
   }
 
   .homepage_call {
-    max-width: 100px;
+    max-width: 90px;
   }
 }

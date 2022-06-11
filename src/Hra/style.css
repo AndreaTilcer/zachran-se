@@ -91,3 +91,23 @@
     justify-content: left;
   }
 }
+
+@media (min-width: 1300px) {
+  .game_button {
+    width: 3.5rem;
+  }
+
+  .lifebar_monkey {
+    width: 4rem;
+    padding: 0.5rem;
+  }
+
+  .lifebar_heart {
+    width: 3rem;
+    padding: 0.5rem;
+  }
+
+  .tree img {
+    width: 6rem;
+  }
+}
