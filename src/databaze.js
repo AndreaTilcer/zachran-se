@@ -339,7 +339,8 @@ export const situations = [
     heading: 'Jak se co nejlépe zachovat, pokud tě zastihne horská lavina?',
     image: snow,
     altText: 'Jak se co nejlépe zachovat, pokud tě zastihne horská lavina?',
-    answerCorrect: '',
+    answerCorrect:
+      'V ČR jsou přesně vymezeny lokality lavinového nebezpečí, které jsou v zimním období označeny, a je zakázáno do nich vstupovat. Přesto může nastat situace, kdy budete lavinou ohroženi. Ve chvíli, kdy se lavina dá do pohybu, je třeba se pokusit ujet (na lyžích, saních či snowboardu) z její dráhy. Pokud nestihneme uniknout, snažíme se pomocí kraulových pohybů udržet na povrchu a „vyplavat“ do strany mimo hlavní proud. Snažíme se chránit si obličej a stočit se do klubíčka. Po zastavení se pokusíme vytvořit si vzduchovou kapsu před ústy a nosem, vyčistit si ústa od sněhu. Nejsme-li vážně zraněni, pokusíme se sami vyhrabat z laviny, nejprve však zjistíme, kterým směrem je povrch (necháme volně viset hodinky nebo řetízek, případně slinu po tváři a pomocí gravitace určíme správný směr nahoru). Není dobré se vzdávat, prvních 15 minut pod lavinou má člověk 90% šanci na záchranu.',
     answers: [
       {
         id: 1,

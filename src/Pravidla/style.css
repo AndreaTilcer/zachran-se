@@ -9,6 +9,7 @@
 
 .rules_navigation {
   word-spacing: 1rem;
+  padding-bottom: 20px;
 }
 
 .rules_heading {
@@ -16,10 +17,65 @@
   font-size: 60px;
 }
 
+.rules_heading.monkey {
+  width: 5rem;
+  transform: rotate(-10deg);
+}
+
 .rules_content {
-  max-width: 600px;
+  width: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 30px solid #e7ece0;
+  background-color: white;
+  border-radius: 10%;
+}
+
+.rules_content_container {
+  display: flex;
+  align-items: baseline;
+  padding-top: 30px;
+}
+
+.rules_text {
+  width: 700px;
+}
+
+.rules_icon {
+  width: 2rem;
+}
+
+.rules_icon.heart {
+  width: 1.5rem;
+}
+
+.rules_hint {
+  width: 600px;
+  border-radius: 10%;
+}
+
+.rules_hint.pc {
+  width: 350px;
+  padding-right: 50px;
+}
+
+.rules_hint.mobile {
+  width: 150px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #66c440;
+}
+
+a:focus {
+  text-decoration: none;
+  cursor: grab;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #336121;
 }
