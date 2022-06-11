@@ -3,7 +3,7 @@ import './style.css';
 import monkey from '../img/monkey.svg';
 import path from './img/cesta.png';
 import lock from './img/lock.svg';
-import liana from './img/liana.svg';
+import liana from './img/liana.png';
 import monkey1 from './img/monkey-plaster.png';
 import monkey2 from './img/monkey-bandage.png';
 import { gamefieldIcons } from '../databaze';
