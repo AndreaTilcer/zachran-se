@@ -10,11 +10,11 @@ import { useState } from 'react';
 
 export const HraciPole = ({ onSelect, shouldMonkeyMove, n, player }) => {
   const moveMonkey = () => {
-    document.querySelector('#player').classList.add(`monkey${n}`);
+    document.querySelector('#player').classList.replace(`monkey${n-1}`,`monkey${n}`);
   };
 
   useEffect(() => {
-    document.querySelector('#player').classList.add(`monkey${n - 1}`);
+    document.querySelector('#player').classList.add(`monkey${n}`);
   }, []);
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export const HraciPole = ({ onSelect, shouldMonkeyMove, n, player }) => {
               src={item.image}
               alt={item.altText}
               onClick={(event) =>
-                n === item.id ? onSelect(event.target.id) : null
+                n >= item.id ? onSelect(event.target.id) : null
               }
             />
             {n < item.id ? (
@@ -55,7 +55,7 @@ export const HraciPole = ({ onSelect, shouldMonkeyMove, n, player }) => {
      
 
       <div className="monkey1" id="player">
-        <img src={player} alt="Hráč" />
+        <img className="monkey_icon" src={player} alt="Hráč" />
       </div>
     </>
   );

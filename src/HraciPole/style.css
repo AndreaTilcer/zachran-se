@@ -92,7 +92,7 @@
 
 .fireplace {
   position: absolute;
-  top: 500px;
+  top: 450px;
   left: 500px;
   right: 450px;
   width: 150px;
@@ -129,6 +129,10 @@
   transform: scaleX(1.5) scaleY(1.5);
 }
 
+.monkey_icon {
+  width: 5rem;
+}
+
 .monkey1 {
   position: absolute;
   left: 340px;
@@ -136,51 +140,331 @@
   top: 150px;
 }
 
+@keyframes move1 {
+  0% {
+    left: 340px;
+    top: 150px;
+  }
+  50% {
+    left: 440px;
+    top: 100px;
+  }
+  100% {
+    left: 490px;
+    top: 125px;
+  }
+}
+
 .monkey2 {
-  transform: translate(200%, -40%);
-  transition: transform 700ms ease-in-out 25ms;
+  position: absolute;
+  left: 490px;
+  top: 125px;
+  animation-name: move1;
+  animation-duration: 4s;
+}
+
+@keyframes move2 {
+  0% {
+    left: 490px;
+    top: 125px;
+  }
+  50% {
+    left: 540px;
+    top: 100px;
+  }
+  100% {
+    left: 630px;
+    top: 100px;
+  }
 }
 
 .monkey3 {
-  transform: translate(400%, -60%);
-  transition: transform 700ms ease-in-out 25ms;
+  position: absolute;
+  left: 630px;
+  top: 100px;
+  animation-name: move2;
+  animation-duration: 4s;
+}
+
+@keyframes move3 {
+  0% {
+    left: 630px;
+    top: 100px;
+  }
+  50% {
+    left: 670px;
+    top: 160px;
+  }
+  100% {
+    left: 650px;
+    top: 200px;
+  }
 }
 
 .monkey4 {
-  transform: translate(450%, 20%);
-  transition: transform 700ms ease-in-out 25ms;
+  position: absolute;
+  left: 650px;
+  top: 200px;
+  animation-name: move3;
+  animation-duration: 4s;
+}
+@keyframes move4 {
+  from {
+    left: 650px;
+    top: 200px;
+  }
+  to {
+    left: 590px;
+    top: 290px;
+  }
 }
 
 .monkey5 {
-  transform: translate(400%, 120%);
-  transition: transform 700ms ease-in-out 25ms;
+  position: absolute;
+  left: 590px;
+  top: 290px;
+  animation-name: move4;
+  animation-duration: 4s;
+}
+
+@keyframes move5 {
+  0% {
+    left: 590px;
+    top: 290px;
+  }
+  50% {
+    left: 560px;
+    top: 315px;
+  }
+  100% {
+    left: 500px;
+    top: 330px;
+  }
 }
 
 .monkey6 {
-  transform: translate(230%, 220%);
-  transition: transform 700ms ease-in-out 25ms;
+  position: absolute;
+  left: 500px;
+  top: 330px;
+  animation-name: move5;
+  animation-duration: 4s;
+}
+
+@keyframes move6 {
+  0% {
+    left: 500px;
+    top: 330px;
+  }
+  50% {
+    left: 460px;
+    top: 340px;
+  }
+  100% {
+    left: 420px;
+    top: 270px;
+  }
 }
 
 .monkey7 {
-  transform: translate(100%, 150%);
-  transition: transform 700ms ease-in-out 25ms;
+  position: absolute;
+  left: 420px;
+  top: 270px;
+  animation-name: move6;
+  animation-duration: 4s;
+}
+
+@keyframes move7 {
+  from {
+    left: 420px;
+    top: 270px;
+  }
+  to {
+    left: 330px;
+    top: 220px;
+  }
 }
 
 .monkey8 {
-  transform: translate(10%, 80%);
-  transition: transform 700ms ease-in-out 25ms;
+  position: absolute;
+  left: 330px;
+  top: 220px;
+  animation-name: move7;
+  animation-duration: 4s;
+}
+
+@keyframes move8 {
+  from {
+    left: 330px;
+    top: 220px;
+  }
+  to {
+    left: 340px;
+    top: 150px;
+  }
 }
 
 .monkey9 {
-  transform: translate(30%, 10%);
-  transition: transform 700ms ease-in-out 25ms;
-}
-
-.monkey1 img {
-  width: 5rem;
+  position: absolute;
+  left: 340px;
+  top: 150px;
+  animation-name: move8;
+  animation-duration: 4s;
 }
 
 @media (max-width: 1100px) {
+  .monkey1 {
+    left: calc(340px * 0.9);
+    right: calc(800px * 0.9);
+    top: calc(150px * 0.9);
+  }
+
+  @keyframes move1 {
+    0% {
+      left: calc(340px * 0.9);
+      top: calc(150px * 0.9);
+    }
+    50% {
+      left: calc(440px * 0.9);
+      top: calc(100px * 0.9);
+    }
+    100% {
+      left: calc(490px * 0.9);
+      top: calc(125px * 0.9);
+    }
+  }
+
+  .monkey2 {
+    left: calc(490px * 0.9);
+    top: calc(125px * 0.9);
+  }
+
+  @keyframes move2 {
+    0% {
+      left: calc(490px * 0.9);
+      top: calc(125px * 0.9);
+    }
+    50% {
+      left: calc(540px * 0.9);
+      top: calc(100px * 0.9);
+    }
+    100% {
+      left: calc(630px * 0.9);
+      top: calc(100px * 0.9);
+    }
+  }
+
+  .monkey3 {
+    left: calc(630px * 0.9);
+    top: calc(100px * 0.9);
+  }
+
+  @keyframes move3 {
+    0% {
+      left: calc(630px * 0.9);
+      top: calc(100px * 0.9);
+    }
+    50% {
+      left: calc(670px * 0.9);
+      top: calc(160px * 0.9);
+    }
+    100% {
+      left: calc(650px * 0.9);
+      top: calc(200px * 0.9);
+    }
+  }
+
+  .monkey4 {
+    left: calc(650px * 0.9);
+    top: calc(200px * 0.9);
+  }
+  @keyframes move4 {
+    from {
+      left: calc(650px * 0.9);
+      top: calc(200px * 0.9);
+    }
+    to {
+      left: calc(590px * 0.9);
+      top: calc(290px * 0.9);
+    }
+  }
+
+  .monkey5 {
+    left: calc(590px * 0.9);
+    top: calc(290px * 0.9);
+  }
+
+  @keyframes move5 {
+    0% {
+      left: calc(590px * 0.9);
+      top: 290px;
+    }
+    50% {
+      left: calc(560px * 0.9);
+      top: calc(315px * 0.9);
+    }
+    100% {
+      left: calc(500px * 0.9);
+      top: calc(330px * 0.9);
+    }
+  }
+
+  .monkey6 {
+    left: calc(500px * 0.9);
+    top: calc(330px * 0.9);
+  }
+
+  @keyframes move6 {
+    0% {
+      left: calc(500px * 0.9);
+      top: calc(330px * 0.9);
+    }
+    50% {
+      left: calc(460px * 0.9);
+      top: calc(340px * 0.9);
+    }
+    100% {
+      left: calc(420px * 0.9);
+      top: calc(270px * 0.9);
+    }
+  }
+
+  .monkey7 {
+    left: calc(420px * 0.9);
+    top: calc(270px * 0.9);
+  }
+
+  @keyframes move7 {
+    from {
+      left: calc(420px * 0.9);
+      top: calc(270px * 0.9);
+    }
+    to {
+      left: calc(330px * 0.9);
+      top: calc(220px * 0.9);
+    }
+  }
+
+  .monkey8 {
+    left: calc(330px * 0.9);
+    top: calc(220px * 0.9);
+  }
+
+  @keyframes move8 {
+    from {
+      left: calc(330px * 0.9);
+      top: calc(220px * 0.9);
+    }
+    to {
+      left: calc(340px * 0.9);
+      top: calc(150px * 0.9);
+    }
+  }
+
+  .monkey9 {
+    left: calc(340px * 0.9);
+    top: calc(150px * 0.9);
+  }
+
   .gamefield_icon {
     width: calc(7rem * 0.9);
   }
@@ -231,7 +515,7 @@
   }
 
   .fireplace {
-    top: calc(500px * 0.9);
+    top: calc(450px * 0.9);
     left: calc(500px * 0.9);
     right: calc(450px * 0.9);
     width: calc(150px * 0.9);
@@ -250,17 +534,166 @@
     right: calc(750px * 0.9);
     width: calc(150px * 0.9);
   }
-  .monkey1 {
-    left: calc(340px * 0.9);
-    right: calc(800px * 0.9);
-    top: calc(150px * 0.9);
-  }
-  .monkey1 img {
+
+  .monkey_icon {
     width: calc(5rem * 0.9);
   }
 }
 
 @media (max-width: 1000px) {
+  .monkey1 {
+    left: calc(340px * 0.8);
+    right: calc(800px * 0.8);
+    top: calc(150px * 0.8);
+  }
+
+  @keyframes move1 {
+    0% {
+      left: calc(340px * 0.8);
+      top: calc(150px * 0.8);
+    }
+    50% {
+      left: calc(440px * 0.8);
+      top: calc(100px * 0.8);
+    }
+    100% {
+      left: calc(490px * 0.8);
+      top: calc(125px * 0.8);
+    }
+  }
+
+  .monkey2 {
+    left: calc(490px * 0.8);
+    top: calc(125px * 0.8);
+  }
+
+  @keyframes move2 {
+    0% {
+      left: calc(490px * 0.8);
+      top: calc(125px * 0.8);
+    }
+    50% {
+      left: calc(540px * 0.8);
+      top: calc(100px * 0.8);
+    }
+    100% {
+      left: calc(630px * 0.8);
+      top: calc(100px * 0.8);
+    }
+  }
+
+  .monkey3 {
+    left: calc(630px * 0.8);
+    top: calc(100px * 0.8);
+  }
+
+  @keyframes move3 {
+    0% {
+      left: calc(630px * 0.8);
+      top: calc(100px * 0.8);
+    }
+    50% {
+      left: calc(670px * 0.8);
+      top: calc(160px * 0.8);
+    }
+    100% {
+      left: calc(650px * 0.8);
+      top: calc(200px * 0.8);
+    }
+  }
+
+  .monkey4 {
+    left: calc(650px * 0.8);
+    top: calc(200px * 0.8);
+  }
+  @keyframes move4 {
+    from {
+      left: calc(650px * 0.8);
+      top: calc(200px * 0.8);
+    }
+    to {
+      left: calc(590px * 0.8);
+      top: calc(290px * 0.8);
+    }
+  }
+
+  .monkey5 {
+    left: calc(590px * 0.8);
+    top: calc(290px * 0.8);
+  }
+
+  @keyframes move5 {
+    0% {
+      left: calc(590px * 0.8);
+      top: calc(290px * 0.8);
+    }
+    50% {
+      left: calc(560px * 0.8);
+      top: calc(315px * 0.8);
+    }
+    100% {
+      left: calc(500px * 0.8);
+      top: calc(330px * 0.8);
+    }
+  }
+
+  .monkey6 {
+    left: calc(500px * 0.8);
+    top: calc(330px * 0.8);
+  }
+
+  @keyframes move6 {
+    0% {
+      left: calc(500px * 0.8);
+      top: calc(330px * 0.8);
+    }
+    50% {
+      left: calc(460px * 0.8);
+      top: calc(340px * 0.8);
+    }
+    100% {
+      left: calc(420px * 0.8);
+      top: calc(270px * 0.8);
+    }
+  }
+
+  .monkey7 {
+    left: calc(420px * 0.8);
+    top: calc(270px * 0.8);
+  }
+
+  @keyframes move7 {
+    from {
+      left: calc(420px * 0.8);
+      top: calc(270px * 0.8);
+    }
+    to {
+      left: calc(330px * 0.8);
+      top: calc(220px * 0.8);
+    }
+  }
+
+  .monkey8 {
+    left: calc(330px * 0.8);
+    top: calc(220px * 0.8);
+  }
+
+  @keyframes move8 {
+    from {
+      left: calc(330px * 0.8);
+      top: calc(220px * 0.8);
+    }
+    to {
+      left: calc(340px * 0.8);
+      top: calc(150px * 0.8);
+    }
+  }
+
+  .monkey9 {
+    left: calc(340px * 0.8);
+    top: calc(150px * 0.8);
+  }
+
   .gamefield_icon {
     width: calc(7rem * 0.8);
   }
@@ -311,7 +744,7 @@
   }
 
   .fireplace {
-    top: calc(500px * 0.8);
+    top: calc(450px * 0.8);
     left: calc(500px * 0.8);
     right: calc(450px * 0.8);
     width: calc(150px * 0.8);
@@ -330,17 +763,166 @@
     right: calc(750px * 0.8);
     width: calc(150px * 0.8);
   }
-  .monkey1 {
-    left: calc(340px * 0.8);
-    right: calc(800px * 0.8);
-    top: calc(150px * 0.8);
-  }
-  .monkey1 img {
+
+  .monkey_icon {
     width: calc(5rem * 0.8);
   }
 }
 
 @media (max-width: 900px) {
+  .monkey1 {
+    left: calc(340px * 0.7);
+    right: calc(800px * 0.7);
+    top: calc(150px * 0.7);
+  }
+
+  @keyframes move1 {
+    0% {
+      left: calc(340px * 0.7);
+      top: calc(150px * 0.7);
+    }
+    50% {
+      left: calc(440px * 0.7);
+      top: calc(100px * 0.7);
+    }
+    100% {
+      left: calc(490px * 0.7);
+      top: calc(125px * 0.7);
+    }
+  }
+
+  .monkey2 {
+    left: calc(490px * 0.7);
+    top: calc(125px * 0.7);
+  }
+
+  @keyframes move2 {
+    0% {
+      left: calc(490px * 0.7);
+      top: calc(125px * 0.7);
+    }
+    50% {
+      left: calc(540px * 0.7);
+      top: calc(100px * 0.7);
+    }
+    100% {
+      left: calc(630px * 0.7);
+      top: calc(100px * 0.7);
+    }
+  }
+
+  .monkey3 {
+    left: calc(630px * 0.7);
+    top: calc(100px * 0.7);
+  }
+
+  @keyframes move3 {
+    0% {
+      left: calc(630px * 0.7);
+      top: calc(100px * 0.7);
+    }
+    50% {
+      left: calc(670px * 0.7);
+      top: calc(160px * 0.7);
+    }
+    100% {
+      left: calc(650px * 0.7);
+      top: calc(200px * 0.7);
+    }
+  }
+
+  .monkey4 {
+    left: calc(650px * 0.7);
+    top: calc(200px * 0.7);
+  }
+  @keyframes move4 {
+    from {
+      left: calc(650px * 0.7);
+      top: calc(200px * 0.7);
+    }
+    to {
+      left: calc(590px * 0.7);
+      top: calc(290px * 0.7);
+    }
+  }
+
+  .monkey5 {
+    left: calc(590px * 0.7);
+    top: calc(290px * 0.7);
+  }
+
+  @keyframes move5 {
+    0% {
+      left: calc(590px * 0.7);
+      top: calc(290px * 0.7);
+    }
+    50% {
+      left: calc(560px * 0.7);
+      top: calc(315px * 0.7);
+    }
+    100% {
+      left: calc(500px * 0.7);
+      top: calc(330px * 0.7);
+    }
+  }
+
+  .monkey6 {
+    left: calc(500px * 0.7);
+    top: calc(330px * 0.7);
+  }
+
+  @keyframes move6 {
+    0% {
+      left: calc(500px * 0.7);
+      top: calc(330px * 0.7);
+    }
+    50% {
+      left: calc(460px * 0.7);
+      top: calc(340px * 0.7);
+    }
+    100% {
+      left: calc(420px * 0.7);
+      top: calc(270px * 0.7);
+    }
+  }
+
+  .monkey7 {
+    left: calc(420px * 0.7);
+    top: calc(270px * 0.7);
+  }
+
+  @keyframes move7 {
+    from {
+      left: calc(420px * 0.7);
+      top: calc(270px * 0.7);
+    }
+    to {
+      left: calc(330px * 0.7);
+      top: calc(220px * 0.7);
+    }
+  }
+
+  .monkey8 {
+    left: calc(330px * 0.7);
+    top: calc(220px * 0.7);
+  }
+
+  @keyframes move8 {
+    from {
+      left: calc(330px * 0.7);
+      top: calc(220px * 0.7);
+    }
+    to {
+      left: calc(340px * 0.7);
+      top: calc(150px * 0.7);
+    }
+  }
+
+  .monkey9 {
+    left: calc(340px * 0.7);
+    top: calc(150px * 0.7);
+  }
+
   .gamefield_icon {
     width: calc(7rem * 0.7);
   }
@@ -391,7 +973,7 @@
   }
 
   .fireplace {
-    top: calc(500px * 0.7);
+    top: calc(450px * 0.7);
     left: calc(500px * 0.7);
     right: calc(450px * 0.7);
     width: calc(150px * 0.7);
@@ -410,17 +992,166 @@
     right: calc(750px * 0.7);
     width: calc(150px * 0.7);
   }
-  .monkey1 {
-    left: calc(340px * 0.7);
-    right: calc(800px * 0.7);
-    top: calc(150px * 0.7);
-  }
-  .monkey1 img {
+
+  .monkey_icon {
     width: calc(5rem * 0.7);
   }
 }
 
 @media (max-width: 800px) {
+  .monkey1 {
+    left: calc(340px * 0.6);
+    right: calc(800px * 0.6);
+    top: calc(150px * 0.6);
+  }
+
+  @keyframes move1 {
+    0% {
+      left: calc(340px * 0.9);
+      top: calc(150px * 0.9);
+    }
+    50% {
+      left: calc(440px * 0.9);
+      top: calc(100px * 0.9);
+    }
+    100% {
+      left: calc(490px * 0.9);
+      top: calc(125px * 0.9);
+    }
+  }
+
+  .monkey2 {
+    left: calc(490px * 0.6);
+    top: calc(125px * 0.6);
+  }
+
+  @keyframes move2 {
+    0% {
+      left: calc(490px * 0.6);
+      top: calc(125px * 0.6);
+    }
+    50% {
+      left: calc(540px * 0.6);
+      top: calc(100px * 0.6);
+    }
+    100% {
+      left: calc(630px * 0.6);
+      top: calc(100px * 0.6);
+    }
+  }
+
+  .monkey3 {
+    left: calc(630px * 0.6);
+    top: calc(100px * 0.6);
+  }
+
+  @keyframes move3 {
+    0% {
+      left: calc(630px * 0.6);
+      top: calc(100px * 0.6);
+    }
+    50% {
+      left: calc(670px * 0.6);
+      top: calc(160px * 0.6);
+    }
+    100% {
+      left: calc(650px * 0.6);
+      top: calc(200px * 0.6);
+    }
+  }
+
+  .monkey4 {
+    left: calc(650px * 0.6);
+    top: calc(200px * 0.6);
+  }
+  @keyframes move4 {
+    from {
+      left: calc(650px * 0.6);
+      top: calc(200px * 0.6);
+    }
+    to {
+      left: calc(590px * 0.6);
+      top: calc(290px * 0.6);
+    }
+  }
+
+  .monkey5 {
+    left: calc(590px * 0.6);
+    top: calc(290px * 0.6);
+  }
+
+  @keyframes move5 {
+    0% {
+      left: calc(590px * 0.6);
+      top: calc(290px * 0.6);
+    }
+    50% {
+      left: calc(560px * 0.6);
+      top: calc(315px * 0.6);
+    }
+    100% {
+      left: calc(500px * 0.6);
+      top: calc(330px * 0.6);
+    }
+  }
+
+  .monkey6 {
+    left: calc(500px * 0.6);
+    top: calc(330px * 0.6);
+  }
+
+  @keyframes move6 {
+    0% {
+      left: calc(500px * 0.6);
+      top: calc(330px * 0.6);
+    }
+    50% {
+      left: calc(460px * 0.6);
+      top: calc(340px * 0.6);
+    }
+    100% {
+      left: calc(420px * 0.6);
+      top: calc(270px * 0.6);
+    }
+  }
+
+  .monkey7 {
+    left: calc(420px * 0.6);
+    top: calc(270px * 0.6);
+  }
+
+  @keyframes move7 {
+    from {
+      left: calc(420px * 0.6);
+      top: calc(270px * 0.6);
+    }
+    to {
+      left: calc(330px * 0.6);
+      top: calc(220px * 0.6);
+    }
+  }
+
+  .monkey8 {
+    left: calc(330px * 0.6);
+    top: calc(220px * 0.6);
+  }
+
+  @keyframes move8 {
+    from {
+      left: calc(330px * 0.6);
+      top: calc(220px * 0.6);
+    }
+    to {
+      left: calc(340px * 0.6);
+      top: calc(150px * 0.6);
+    }
+  }
+
+  .monkey9 {
+    left: calc(340px * 0.6);
+    top: calc(150px * 0.6);
+  }
+
   .gamefield_icon {
     width: calc(7rem * 0.6);
   }
@@ -471,7 +1202,7 @@
   }
 
   .fireplace {
-    top: calc(500px * 0.6);
+    top: calc(450px * 0.6);
     left: calc(500px * 0.6);
     right: calc(450px * 0.6);
     width: calc(150px * 0.6);
@@ -490,17 +1221,166 @@
     right: calc(750px * 0.6);
     width: calc(150px * 0.6);
   }
-  .monkey1 {
-    left: calc(340px * 0.6);
-    right: calc(800px * 0.6);
-    top: calc(150px * 0.6);
-  }
-  .monkey1 img {
+
+  .monkey_icon {
     width: calc(5rem * 0.6);
   }
 }
 
 @media (max-width: 700px) {
+  .monkey1 {
+    left: calc(340px * 0.5);
+    right: calc(800px * 0.5);
+    top: calc(150px * 0.5);
+  }
+
+  @keyframes move1 {
+    0% {
+      left: calc(340px * 0.5);
+      top: calc(150px * 0.5);
+    }
+    50% {
+      left: calc(440px * 0.5);
+      top: calc(100px * 0.5);
+    }
+    100% {
+      left: calc(490px * 0.5);
+      top: calc(125px * 0.5);
+    }
+  }
+
+  .monkey2 {
+    left: calc(490px * 0.5);
+    top: calc(125px * 0.5);
+  }
+
+  @keyframes move2 {
+    0% {
+      left: calc(490px * 0.5);
+      top: calc(125px * 0.9);
+    }
+    50% {
+      left: calc(540px * 0.5);
+      top: calc(100px * 0.5);
+    }
+    100% {
+      left: calc(630px * 0.5);
+      top: calc(100px * 0.5);
+    }
+  }
+
+  .monkey3 {
+    left: calc(630px * 0.5);
+    top: calc(100px * 0.5);
+  }
+
+  @keyframes move3 {
+    0% {
+      left: calc(630px * 0.5);
+      top: calc(100px * 0.5);
+    }
+    50% {
+      left: calc(670px * 0.5);
+      top: calc(160px * 0.5);
+    }
+    100% {
+      left: calc(650px * 0.5);
+      top: calc(200px * 0.5);
+    }
+  }
+
+  .monkey4 {
+    left: calc(650px * 0.5);
+    top: calc(200px * 0.5);
+  }
+  @keyframes move4 {
+    from {
+      left: calc(650px * 0.5);
+      top: calc(200px * 0.5);
+    }
+    to {
+      left: calc(590px * 0.5);
+      top: calc(290px * 0.5);
+    }
+  }
+
+  .monkey5 {
+    left: calc(590px * 0.5);
+    top: calc(290px * 0.5);
+  }
+
+  @keyframes move5 {
+    0% {
+      left: calc(590px * 0.5);
+      top: calc(290px * 0.5);
+    }
+    50% {
+      left: calc(560px * 0.5);
+      top: calc(315px * 0.5);
+    }
+    100% {
+      left: calc(500px * 0.5);
+      top: calc(330px * 0.5);
+    }
+  }
+
+  .monkey6 {
+    left: calc(500px * 0.5);
+    top: calc(330px * 0.5);
+  }
+
+  @keyframes move6 {
+    0% {
+      left: calc(500px * 0.5);
+      top: calc(330px * 0.5);
+    }
+    50% {
+      left: calc(460px * 0.5);
+      top: calc(340px * 0.5);
+    }
+    100% {
+      left: calc(420px * 0.5);
+      top: calc(270px * 0.5);
+    }
+  }
+
+  .monkey7 {
+    left: calc(420px * 0.5);
+    top: calc(270px * 0.5);
+  }
+
+  @keyframes move7 {
+    from {
+      left: calc(420px * 0.5);
+      top: calc(270px * 0.5);
+    }
+    to {
+      left: calc(330px * 0.5);
+      top: calc(220px * 0.5);
+    }
+  }
+
+  .monkey8 {
+    left: calc(330px * 0.5);
+    top: calc(220px * 0.5);
+  }
+
+  @keyframes move8 {
+    from {
+      left: calc(330px * 0.5);
+      top: calc(220px * 0.5);
+    }
+    to {
+      left: calc(340px * 0.5);
+      top: calc(150px * 0.5);
+    }
+  }
+
+  .monkey9 {
+    left: calc(340px * 0.5);
+    top: calc(150px * 0.5);
+  }
+
   .gamefield_icon {
     width: calc(7rem * 0.5);
   }
@@ -551,7 +1431,7 @@
   }
 
   .fireplace {
-    top: calc(500px * 0.5);
+    top: calc(450px * 0.5);
     left: calc(500px * 0.5);
     right: calc(450px * 0.5);
     width: calc(150px * 0.5);
@@ -570,12 +1450,8 @@
     right: calc(750px * 0.5);
     width: calc(150px * 0.5);
   }
-  .monkey1 {
-    left: calc(340px * 0.5);
-    right: calc(800px * 0.5);
-    top: calc(150px * 0.5);
-  }
-  .monkey1 img {
+
+  .monkey_icon {
     width: calc(5rem * 0.5);
   }
 }
@@ -654,10 +1530,137 @@
     position: absolute;
     left: 15vw;
     top: 10vh;
-    width: 150px;
+    width: 5rem;
   }
 
-  .monkey1 img {
+  @keyframes move1 {
+    from {
+      top: 10vh;
+    }
+    to {
+      top: 25vh;
+    }
+  }
+
+  .monkey2 {
+    position: absolute;
+    left: 15vw;
+    top: 25vh;
+    width: 5rem;
+  }
+
+  @keyframes move2 {
+    from {
+      top: 25vh;
+    }
+    to {
+      top: 40vh;
+    }
+  }
+
+  .monkey3 {
+    position: absolute;
+    left: 15vw;
+    top: 40vh;
+    width: 5rem;
+  }
+
+  @keyframes move3 {
+    from {
+      top: 40vh;
+    }
+    to {
+      top: 55vh;
+    }
+  }
+
+  .monkey4 {
+    position: absolute;
+    left: 15vw;
+    top: 55vh;
+    width: 5rem;
+  }
+
+  @keyframes move4 {
+    from {
+      top: 55vh;
+    }
+    to {
+      top: 75vh;
+    }
+  }
+
+  .monkey5 {
+    position: absolute;
+    left: 15vw;
+    top: 75vh;
+    width: 5rem;
+  }
+
+  @keyframes move5 {
+    from {
+      top: 75vh;
+    }
+    to {
+      top: 90vh;
+    }
+  }
+
+  .monkey6 {
+    position: absolute;
+    left: 15vw;
+    top: 90vh;
+    width: 5rem;
+  }
+  @keyframes move6 {
+    from {
+      top: 90vh;
+    }
+    to {
+      top: 105vh;
+    }
+  }
+
+  .monkey7 {
+    position: absolute;
+    left: 15vw;
+    top: 105vh;
+    width: 5rem;
+  }
+
+  @keyframes move7 {
+    from {
+      top: 100vh;
+    }
+    to {
+      top: 125vh;
+    }
+  }
+
+  .monkey8 {
+    position: absolute;
+    left: 15vw;
+    top: 125vh;
+    width: 5rem;
+  }
+
+  @keyframes move8 {
+    from {
+      top: 125vh;
+    }
+    to {
+      top: 140vh;
+    }
+  }
+
+  .monkey9 {
+    position: absolute;
+    left: 15vw;
+    top: 125vh;
+    width: 5rem;
+  }
+
+  .monkey_icon {
     width: 5rem;
   }
 
