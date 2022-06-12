@@ -1,14 +1,11 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
 import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-  Outlet,
   useNavigate,
 } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
+
+import './style.css';
+
 import next from './img/next.svg';
 import back from './img/back.svg';
 import correct from './img/correct.svg';
@@ -18,8 +15,6 @@ import dndPic from '../img/DnD_hint.gif';
 import clickPic from '../img/onClick_hint.gif';
 
 
-import './style.css';
-import { situations } from '../databaze';
 
 const useDidMountEffect = (func, deps) => {
   const didMount = useRef(false);

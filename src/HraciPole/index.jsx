@@ -1,13 +1,15 @@
 import React from 'react';
+import { useEffect } from 'react';
+
 import './style.css';
-import monkey from '../img/monkey.svg';
+
 import path from './img/cesta.png';
 import lock from './img/lock.svg';
 import liana from './img/liana.png';
 import check from "./img/accept.svg"
+
 import { gamefieldIcons } from '../databaze';
-import { useEffect } from 'react';
-import { useState } from 'react';
+
 
 export const HraciPole = ({ onSelect, shouldMonkeyMove, n, player }) => {
   const moveMonkey = () => {

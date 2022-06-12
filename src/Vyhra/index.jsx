@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
+
 import '../Pravidla/style.css';
 import './style.css';
-import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
-import Question from '../img/question.svg';
-import Home from '../img/home.svg';
-import Monkey from '../img/monkey.svg';
-import stars from '../img/stars.svg';
-import Refresh from '../img/refresh.svg';
+
+import question from '../img/question.svg';
+import home from '../img/home.svg';
+import refresh from '../img/refresh.svg';
+
 import { Results } from '../Results';
 
 export const Vyhra = ({}) => {
@@ -17,13 +18,13 @@ export const Vyhra = ({}) => {
       <div className="navbar_container">
         <nav className="victory_navigation">
           <Link to="/hra">
-            <img className="victory_button" src={Refresh} alt="hrat-znovu" />
+            <img className="victory_button" src={refresh} alt="hrat-znovu" />
           </Link>{' '}
           <Link to="/">
-            <img className="victory_button" src={Home} alt="domu" />
+            <img className="victory_button" src={home} alt="domu" />
           </Link>{' '}
           <Link to="/pravidla">
-            <img className="victory_button" src={Question} alt="pravidla" />{' '}
+            <img className="victory_button" src={question} alt="pravidla" />{' '}
           </Link>
         </nav>
         <Outlet />

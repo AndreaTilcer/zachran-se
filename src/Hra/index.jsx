@@ -1,14 +1,14 @@
 import React from 'react';
-import '../style.css';
-import './style.css';
+import { useState, useEffect } from 'react';
 import {
-  BrowserRouter,
-  Routes,
-  Route,
   Link,
   Outlet,
   useNavigate,
 } from 'react-router-dom';
+
+import '../style.css';
+import './style.css';
+
 import question from '../img/question.svg';
 import home from '../img/home.svg';
 import monkey from '../img/monkey.svg';
@@ -19,29 +19,28 @@ import tree4 from './img/tree4.svg';
 import monkey1 from './img/monkey-plaster.png';
 import monkey2 from './img/monkey-bandage.png';
 import star from "./img/star.svg"
+
 import { HraciPole } from '../HraciPole';
 import { Situace } from '../Situace';
 import { situations } from '../databaze';
 import { lives } from '../databaze';
-import { Results } from '../Results';
-import { Vyhra } from '../Vyhra';
 
-import { useState, useEffect } from 'react';
+
 
 
 export const Hra = () => {
+
   const [situation, setSituation] = useState({});
   const [showGamefield, setShowGamefield] = useState(true);
-
   const [lifebar, setLifebar] = useState(lives[0]);
-
   const [i, setI] = useState(1);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
-
   const [gameOver, setGameOver] = useState(false);
-  const [starCount, setStarCount] = useState(0)
-
-  const [stopStars, setStopStars] = useState(false)
+  const [starCount, setStarCount] = useState(0);
+  const [stopStars, setStopStars] = useState(false);
+  const [shouldMonkeyMove, setShouldMonkeyMove] = useState(false);
+  const [n, setN] = useState(1);
+  const [player, setPlayer] = useState(null);
 
 
   const handleOnSelect = (id) => {
@@ -49,11 +48,6 @@ export const Hra = () => {
     setSituation(oneSituation[0]);
     setShowGamefield(false);
   };
-
-  const [shouldMonkeyMove, setShouldMonkeyMove] = useState(false);
-
-  const [n, setN] = useState(1);
-
 
   const handleContinue = () => {
     isAnswerCorrect ? setShouldMonkeyMove(true) : null;
@@ -88,8 +82,6 @@ export const Hra = () => {
       setGameOver(true);
     }
   };
-
-  const [player, setPlayer] = useState(null);
 
 
   useEffect(() => {

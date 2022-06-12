@@ -1,7 +1,8 @@
 import React from 'react';
-import '../style.css';
+import { Link, Outlet } from 'react-router-dom';
+
 import './style.css';
-import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+
 import play from '../img/play.svg';
 import home from '../img/home.svg';
 import monkey from '../img/monkey.svg';
