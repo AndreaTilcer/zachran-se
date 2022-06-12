@@ -32,12 +32,14 @@
   width: 400px;
   position: fixed;
   bottom: 200px;
+  border-radius: 30px;
 }
 
 .hint_class_mobile {
   width: 150px;
   position: fixed;
   display: none;
+  border-radius: 30px;
 }
 
 .situace_2 {
