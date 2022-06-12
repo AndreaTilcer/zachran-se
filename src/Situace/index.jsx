@@ -17,7 +17,6 @@ import hint from './img/hint.svg';
 import dndPic from '../img/DnD_hint.gif';
 import clickPic from '../img/onClick_hint.gif';
 
-// import { useDrag } from 'react-dnd';
 
 import './style.css';
 import { situations } from '../databaze';
@@ -49,7 +48,8 @@ export const Situace = ({
   const [isCorrect, setIsCorrect] = useState(null);
   const [openWindow, setOpenWindow] = useState(false);
   const [viewHint, setViewHint] = useState(false);
-
+ 
+  
   useDidMountEffect(() => {
     onAnswer(isCorrect);
   }, [isCorrect]);
@@ -71,12 +71,16 @@ export const Situace = ({
     getResult(ev.target.id);
   };
 
+
+
   const getResult = (iconID) => {
     const correctAnswer = answers.filter((item) => item.id === Number(iconID));
 
     setIsCorrect(correctAnswer[0].correct);
     setOpenWindow(true);
+    
   };
+
 
   const navigate = useNavigate();
 

@@ -18,6 +18,7 @@ import tree3 from './img/tree3.svg';
 import tree4 from './img/tree4.svg';
 import monkey1 from './img/monkey-plaster.png';
 import monkey2 from './img/monkey-bandage.png';
+import star from "./img/star.svg"
 import { HraciPole } from '../HraciPole';
 import { Situace } from '../Situace';
 import { situations } from '../databaze';
@@ -35,6 +36,10 @@ export const Hra = () => {
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
 
   const [gameOver, setGameOver] = useState(false);
+  const [starCount, setStarCount] = useState(0)
+
+  const [stopStars, setStopStars] = useState(false)
+
 
   const handleOnSelect = (id) => {
     const oneSituation = situations.filter((item) => item.id === Number(id));
@@ -51,12 +56,17 @@ export const Hra = () => {
     isAnswerCorrect ? setShouldMonkeyMove(true) : null;
     isAnswerCorrect && n < 9 ? setN(n + 1) : null;
     isAnswerCorrect ? setShowGamefield(true) : setShowGamefield(false);
+    isAnswerCorrect && stopStars === false? setStarCount(starCount + 10) : null
+    isAnswerCorrect && stopStars? setStopStars(false) : null
   };
 
+  
   const handleOnAnswer = (isCorrect) => {
     isCorrect ? null : removeLife();
+    isCorrect ? null : setStopStars(true)
     setIsAnswerCorrect(isCorrect);
   };
+
 
   const navigate = useNavigate();
 
@@ -102,11 +112,16 @@ export const Hra = () => {
             <img className="game_button" src={question} alt="pravidla" />{' '}
           </Link>
         </nav>
+        <div className='results'>
         <div className="lifebar">
           <img className="lifebar_monkey" src={player} alt="Opička" />
           {lifebar.map((item) => (
-            <img src={item} className="lifebar_heart" />
-          ))}
+            <img src={item} className="lifebar_heart" />))}
+            </div>
+            <div className='stars'>
+            <img src={star} className='star'/> 
+            <div className='count'>{starCount.toString()}</div> 
+            </div>
         </div>
       </div>
       <Outlet />
