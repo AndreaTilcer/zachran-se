@@ -469,7 +469,7 @@
     width: calc(7rem * 0.9);
   }
 
-  .lock {
+  .lock_check_icon {
     width: calc(3rem * 0.9);
   }
 
@@ -698,7 +698,7 @@
     width: calc(7rem * 0.8);
   }
 
-  .lock {
+  .lock_check_icon {
     width: calc(3rem * 0.8);
   }
 
@@ -927,7 +927,7 @@
     width: calc(7rem * 0.7);
   }
 
-  .lock {
+  .lock_check_icon {
     width: calc(3rem * 0.7);
   }
 
@@ -1007,16 +1007,16 @@
 
   @keyframes move1 {
     0% {
-      left: calc(340px * 0.9);
-      top: calc(150px * 0.9);
+      left: calc(340px * 0.6);
+      top: calc(150px * 0.6);
     }
     50% {
-      left: calc(440px * 0.9);
-      top: calc(100px * 0.9);
+      left: calc(440px * 0.6);
+      top: calc(100px * 0.6);
     }
     100% {
-      left: calc(490px * 0.9);
-      top: calc(125px * 0.9);
+      left: calc(490px * 0.6);
+      top: calc(125px * 0.6);
     }
   }
 
@@ -1156,7 +1156,7 @@
     width: calc(7rem * 0.6);
   }
 
-  .lock {
+  .lock_check_icon {
     width: calc(3rem * 0.6);
   }
 
@@ -1385,7 +1385,7 @@
     width: calc(7rem * 0.5);
   }
 
-  .lock {
+  .lock_check_icon {
     width: calc(3rem * 0.5);
   }
 
@@ -1465,7 +1465,7 @@
     width: 7rem;
   }
 
-  .lock {
+  .lock_check_icon {
     width: 2rem;
     position: absolute;
   }
@@ -1473,169 +1473,169 @@
   .house {
     position: absolute;
     top: 10px;
-    left: 33vw;
+    left: 200px;
     width: 150px;
   }
 
   .storm {
     position: absolute;
-    left: 33vw;
-    top: 162px;
+    left: 200px;
+    top: 180px;
     width: 150px;
   }
 
   .electricity {
     position: absolute;
-    top: 314px;
-    left: 33vw;
+    top: 350px;
+    left: 200px;
     width: 150px;
   }
 
   .accident {
     position: absolute;
-    top: 466px;
-    left: 33vw;
+    top: 520px;
+    left: 200px;
     width: 150px;
   }
 
   .river {
     position: absolute;
-    top: 618px;
-    left: 33vw;
+    top: 690px;
+    left: 200px;
     width: 150px;
   }
 
   .fireplace {
     position: absolute;
-    top: 770px;
-    left: 33vw;
+    top: 860px;
+    left: 200px;
     width: 150px;
   }
 
   .burnt {
     position: absolute;
-    top: 922px;
-    left: 33vw;
+    top: 1030px;
+    left: 200px;
     width: 150px;
   }
 
   .snow {
     position: absolute;
-    top: 1074px;
-    left: 33vw;
+    top: 1200px;
+    left: 200px;
     width: 150px;
   }
 
   .monkey1 {
     position: absolute;
-    left: 15vw;
-    top: 10vh;
+    left: 90px;
+    top: 40px;
     width: 5rem;
   }
 
   @keyframes move1 {
     from {
-      top: 10vh;
+      top: 40px;
     }
     to {
-      top: 25vh;
+      top: 180px;
     }
   }
 
   .monkey2 {
     position: absolute;
-    left: 15vw;
-    top: 25vh;
+    left: 90px;
+    top: 180px;
     width: 5rem;
   }
 
   @keyframes move2 {
-    from {top: 25vh;}
-    to {top: 40vh}
+    from {top: 180px;}
+    to {top: 360px}
         
       }
     
       .monkey3 {
         position: absolute;
-        left: 15vw;
-        top: 40vh;
+        left: 90px;
+        top: 360px;
         width: 5rem;
       }
 
       @keyframes move3 {
-        from {top: 40vh;}
-        to {top: 55vh}
+        from {top: 360px;}
+        to {top: 550px}
             
           }
         
           .monkey4 {
             position: absolute;
-            left: 15vw;
-            top: 55vh;
+            left: 90px;
+            top: 550px;
             width: 5rem;
           }
 
           @keyframes move4 {
-            from {top: 55vh;}
-            to {top: 75vh}
+            from {top: 550px;}
+            to {top: 720px}
                 
               }
             
               .monkey5 {
                 position: absolute;
-                left: 15vw;
-                top: 75vh;
+                left: 90px;
+                top: 720px;
                 width: 5rem;
               }
 
               @keyframes move5 {
-                from {top: 75vh;}
-                to {top: 90vh}
+                from {top: 720px;}
+                to {top: 900px}
                     
                   }
                 
                   .monkey6 {
                     position: absolute;
-                    left: 15vw;
-                    top: 90vh;
+                    left: 90px;
+                    top: 900px;
                     width: 5rem;
                   }
                   @keyframes move6 {
-                    from {top: 90vh;}
-                    to {top: 105vh}
+                    from {top: 900px;}
+                    to {top: 1070px}
                         
                       }
                     
                       .monkey7 {
                         position: absolute;
-                        left: 15vw;
-                        top: 105vh;
+                        left: 90px;
+                        top: 1070px;
                         width: 5rem;
                       }
 
                       @keyframes move7 {
-                        from {top: 100vh;}
-                        to {top: 125vh}
+                        from {top: 1070px;}
+                        to {top: 1250px}
                             
                           }
                         
                           .monkey8 {
                             position: absolute;
-                            left: 15vw;
-                            top: 125vh;
+                            left: 90px;
+                            top: 1250px;
                             width: 5rem;
                           }
 
                           @keyframes move8 {
-                            from {top: 125vh;}
-                            to {top: 140vh}
+                            from {top: 1250px;}
+                            to {top: 1400px}
                                 
                               }
                             
                               .monkey9 {
                                 position: absolute;
-                                left: 15vw;
-                                top: 140vh;
+                                left: 90px;
+                                top: 1400px;
                                 width: 5rem;
                               }
 
