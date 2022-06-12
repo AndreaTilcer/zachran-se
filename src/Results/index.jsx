@@ -33,7 +33,7 @@ return (
   <div>
     <div className="results_stars">Získal/a jsi:
     </div>
-    <div className="results_stars">{starsFinal} <img className="star_icon" src={star}/></div>
+    <div className="results_stars">{starsFinal} /80 <img className="star_icon" src={star}/> </div>
   </div>
   </div>
   </div>
