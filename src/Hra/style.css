@@ -20,6 +20,10 @@
   width: 3rem;
 }
 
+.game_button:hover {
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
 .lifebar_monkey {
   width: 3rem;
   padding: 0.5rem;

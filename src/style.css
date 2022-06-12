@@ -27,6 +27,10 @@ body {
   margin-top: 50px;
 }
 
+.homepage_button:hover {
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
 .homepage_picture {
   display: flex;
 }
