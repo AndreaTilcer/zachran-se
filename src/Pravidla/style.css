@@ -43,7 +43,8 @@
   width: 700px;
 }
 
-.rules_icon {
+.rules_icon,
+.rules_icon_stars {
   width: 2rem;
 }
 

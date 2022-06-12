@@ -39,9 +39,7 @@ export const Pravidla = () => {
           </p>
           <p className="rules_text">
             Hra vznikla v rámci práce na projektu v rekvalifikačním kurzu
-            Czechitas - Digitální akademie: Web. Více o projektu a jeho
-            autorkách se můžete dočíst{' '}
-            <a href="http://andreatilcer.github.io/o-projektu/">zde</a>.
+            Czechitas - Digitální akademie: Web.
           </p>
 
           <h1 className="rules_heading">Jak hrát</h1>
@@ -57,8 +55,9 @@ export const Pravidla = () => {
               alt="srdce"
             />{' '}
             Hra je úspěšně zakončena, pokud hráč projde všemi situacemi a po
-            vyřešení poslední z nich mu zůstane alespoň jeden život.{' '}
-            <img className="rules_icon stars" src={stars} alt="hvězdy" />
+            vyřešení poslední z nich mu zůstane alespoň jeden život. Na závěr
+            úspěšné hry je také vyhodnocen počet získaných bodů.
+            <img className="rules_icon_stars" src={stars} alt="hvězdy" />
           </p>
           <h2 className="heading_2">Jak tedy skutečně zahájit hru?</h2>
           <p>
