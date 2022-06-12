@@ -1,0 +1,54 @@
+.victory_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .victory_wrapper {
+    width: 1000x;
+    display: flex;
+  flex-direction: column;
+  }
+  
+  .victory_info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .victory_picture {
+    display: flex;
+  }
+  
+  .victory_monkey {
+    max-width: 300px;
+    transform: rotate(-10deg);
+    margin: 0px;
+  }
+  
+  .victory_stars {
+    max-width: 150px;
+  }
+
+.results_monkey {
+    width: 5rem;
+}
+
+.results_stars {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.star_icon {
+    width: 3rem;
+}
+
+@media (max-width: 600px) {
+    .victory_info {
+        flex-direction: column;
+    }
+
+}

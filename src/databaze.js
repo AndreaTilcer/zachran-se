@@ -44,6 +44,7 @@ import Burnt from './HraciPole/img/wildfire.svg';
 import Snow from './HraciPole/img/avalanche.svg';
 import heart from './img/heart.svg';
 import heartEmpty from './img/heart_empty.svg';
+import {Hra} from "./Hra"
 
 export const situations = [
   {

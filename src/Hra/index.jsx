@@ -23,8 +23,11 @@ import { HraciPole } from '../HraciPole';
 import { Situace } from '../Situace';
 import { situations } from '../databaze';
 import { lives } from '../databaze';
+import { Results } from '../Results';
+import { Vyhra } from '../Vyhra';
 
 import { useState, useEffect } from 'react';
+
 
 export const Hra = () => {
   const [situation, setSituation] = useState({});
@@ -88,6 +91,7 @@ export const Hra = () => {
 
   const [player, setPlayer] = useState(null);
 
+
   useEffect(() => {
     if (i < 3) {
       setPlayer(monkey);
@@ -99,7 +103,14 @@ export const Hra = () => {
   }, [i]);
 
 
+useEffect(() => {
+  localStorage.setItem('monkey', player);
+}, [player]);
 
+useEffect(() => {
+  localStorage.setItem('starCount', starCount);
+}, [starCount]);
+ 
 
   return (
     <>
@@ -139,7 +150,8 @@ export const Hra = () => {
           <div className="tree tree4">
             <img src={tree4} alt="Strom" />
           </div>
-          {showGamefield ? (
+
+           {showGamefield ? (
             <HraciPole
               onSelect={handleOnSelect}
               shouldMonkeyMove={shouldMonkeyMove}
@@ -158,9 +170,10 @@ export const Hra = () => {
               answerCorrect={situation.answerCorrect}
               gameOver={gameOver}
             />
-          )}
+          )} 
         </div>
       </div>
     </>
-  );
+  )
+          
 };

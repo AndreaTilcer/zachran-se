@@ -1,3 +1,5 @@
+
+
 .victory_button {
   width: 5rem;
   padding: 0.5rem;
@@ -7,29 +9,8 @@
   transform: scaleX(1.5) scaleY(1.5);
 }
 
-.victory_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
 
-.victory_picture {
-  display: flex;
-}
-
-.victory_monkey {
-  max-width: 300px;
-  transform: rotate(-10deg);
-  margin: 0px;
-}
-
-.victory_stars {
-  max-width: 150px;
-}
-
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .victory_navigation {
     text-align: center;
   }

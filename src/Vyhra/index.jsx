@@ -2,14 +2,16 @@ import React from 'react';
 import '../Pravidla/style.css';
 import './style.css';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
-import Play from '../img/play.svg';
 import Question from '../img/question.svg';
 import Home from '../img/home.svg';
 import Monkey from '../img/monkey.svg';
 import stars from '../img/stars.svg';
 import Refresh from '../img/refresh.svg';
+import { Results } from '../Results';
 
-export const Vyhra = () => {
+export const Vyhra = ({}) => {
+
+
   return (
     <>
       <div className="navbar_container">
@@ -26,13 +28,7 @@ export const Vyhra = () => {
         </nav>
         <Outlet />
 
-        <div className="victory_container">
-          <h1 className="heading">ZACHRÁNIL/A SES!</h1>
-          <div className="victory_picture">
-            <img className="victory_monkey" src={Monkey} alt="opice" />
-            <img className="victory_stars" src={stars} alt="hvězdy" />
-          </div>
-        </div>
+<Results />
       </div>
     </>
   );
