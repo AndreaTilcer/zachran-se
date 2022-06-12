@@ -13,6 +13,9 @@ import next from './img/next.svg';
 import back from './img/back.svg';
 import correct from './img/correct.svg';
 import wrong from './img/wrong.svg';
+import hint from './img/hint.svg';
+import dndPic from '../img/DnD_hint.gif';
+import clickPic from '../img/onClick_hint.gif';
 
 // import { useDrag } from 'react-dnd';
 
@@ -45,6 +48,7 @@ export const Situace = ({
   const [answerID, setAnswerID] = useState('');
   const [isCorrect, setIsCorrect] = useState(null);
   const [openWindow, setOpenWindow] = useState(false);
+  const [viewHint, setViewHint] = useState(false);
 
   useDidMountEffect(() => {
     onAnswer(isCorrect);
@@ -88,6 +92,8 @@ export const Situace = ({
       setOpenWindow(false);
     }
   };
+
+  const setHint = () => setViewHint(!viewHint);
 
   return (
     <>
@@ -140,6 +146,28 @@ export const Situace = ({
               src={image}
               alt={altText}
             />
+            <div className="hint">
+              <img
+                onClick={setHint}
+                className="hint_icon"
+                src={hint}
+                alt="Nápověda"
+              />{' '}
+              {viewHint ? (
+                <>
+                  <img
+                    className="hint_class_desktop"
+                    src={dndPic}
+                    alt="jak vybrat ikonu na počítači"
+                  />
+                  <img
+                    className="hint_class_mobile"
+                    src={clickPic}
+                    alt="jak vybrat ikonu na mobilu a tabletu"
+                  />
+                </>
+              ) : null}
+            </div>
             <div className="answers">
               {answers.map((item) => {
                 return (

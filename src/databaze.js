@@ -245,9 +245,9 @@ export const situations = [
       },
       {
         id: 4,
-        answer: 'K řece se nepřibližuji a nic nedělám',
+        answer: 'K řece se v žádném případě nepřibližuji',
         icon: doingNothing,
-        iconAlt: 'K řece se nepřibližuji a nic nedělám',
+        iconAlt: ' řece se v žádném případě nepřibližuji',
         correct: true,
       },
     ],
@@ -304,16 +304,16 @@ export const situations = [
     answers: [
       {
         id: 1,
-        answer: 'Budu ho rychle ovívat nějakou plachtou,abych ho uhasil/a',
+        answer: 'Budu ho rychle ovívat nějakou plachtou, abych ho uhasil/a',
         icon: fan,
-        iconAlt: 'Budu ho rychle ovívat nějakou plachtou,abych ho uhasil/a',
+        iconAlt: 'Budu ho rychle ovívat nějakou plachtou, abych ho uhasil/a',
         correct: false,
       },
       {
         id: 2,
-        answer: 'Zavřu všechna okna, abych zastavil/a přívod vzduchu',
-        icon: window,
-        iconAlt: 'Zavřu všechna okna, abych zastavil/a přívod vzduchu',
+        answer: 'Nepřibližuji se k němu, držím se od ohně co nejdál',
+        icon: doingNothing,
+        iconAlt: 'Nepřibližuji se k němu, držím se od ohně co nejdál',
         correct: false,
       },
       {
