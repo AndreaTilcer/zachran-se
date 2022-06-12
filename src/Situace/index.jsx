@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  useNavigate,
-} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 
 import './style.css';
@@ -13,8 +11,6 @@ import wrong from './img/wrong.svg';
 import hint from './img/hint.svg';
 import dndPic from '../img/DnD_hint.gif';
 import clickPic from '../img/onClick_hint.gif';
-
-
 
 const useDidMountEffect = (func, deps) => {
   const didMount = useRef(false);
@@ -43,8 +39,7 @@ export const Situace = ({
   const [isCorrect, setIsCorrect] = useState(null);
   const [openWindow, setOpenWindow] = useState(false);
   const [viewHint, setViewHint] = useState(false);
- 
-  
+
   useDidMountEffect(() => {
     onAnswer(isCorrect);
   }, [isCorrect]);
@@ -66,16 +61,12 @@ export const Situace = ({
     getResult(ev.target.id);
   };
 
-
-
   const getResult = (iconID) => {
     const correctAnswer = answers.filter((item) => item.id === Number(iconID));
 
     setIsCorrect(correctAnswer[0].correct);
     setOpenWindow(true);
-    
   };
-
 
   const navigate = useNavigate();
 

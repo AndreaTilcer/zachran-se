@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import '../Vyhra/style.css';
 import './style.css';
@@ -13,6 +14,11 @@ import refresh from '../img/refresh.svg';
 export const Prohra = () => {
   return (
     <>
+      <div>
+        <Helmet>
+          <title>Zachraň se</title>
+        </Helmet>
+      </div>
       <div className="navbar_container">
         <nav className="victory_navigation">
           <Link to="/hra">

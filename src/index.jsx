@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import './style.css';
 
@@ -14,7 +15,6 @@ import { Pravidla } from './Pravidla';
 import { Situace } from './Situace';
 import { Vyhra } from './Vyhra';
 import { Prohra } from './Prohra';
-import { Helmet } from 'react-helmet';
 
 const App = () => (
   <>

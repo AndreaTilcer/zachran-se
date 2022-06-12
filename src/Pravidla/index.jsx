@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import './style.css';
 
@@ -16,6 +17,11 @@ import cottage from '../HraciPole/img/house.svg';
 export const Pravidla = () => {
   return (
     <>
+      <div>
+        <Helmet>
+          <title>Zachraň se</title>
+        </Helmet>
+      </div>
       <div className="rules_container">
         <nav className="rules_navigation">
           <Link to="/hra">

@@ -1,10 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import {
-  Link,
-  Outlet,
-  useNavigate,
-} from 'react-router-dom';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import '../style.css';
 import './style.css';
@@ -18,18 +15,14 @@ import tree3 from './img/tree3.svg';
 import tree4 from './img/tree4.svg';
 import monkey1 from './img/monkey-plaster.png';
 import monkey2 from './img/monkey-bandage.png';
-import star from "./img/star.svg"
+import star from './img/star.svg';
 
 import { HraciPole } from '../HraciPole';
 import { Situace } from '../Situace';
 import { situations } from '../databaze';
 import { lives } from '../databaze';
 
-
-
-
 export const Hra = () => {
-
   const [situation, setSituation] = useState({});
   const [showGamefield, setShowGamefield] = useState(true);
   const [lifebar, setLifebar] = useState(lives[0]);
@@ -42,7 +35,6 @@ export const Hra = () => {
   const [n, setN] = useState(1);
   const [player, setPlayer] = useState(null);
 
-
   const handleOnSelect = (id) => {
     const oneSituation = situations.filter((item) => item.id === Number(id));
     setSituation(oneSituation[0]);
@@ -53,17 +45,17 @@ export const Hra = () => {
     isAnswerCorrect ? setShouldMonkeyMove(true) : null;
     isAnswerCorrect && n < 9 ? setN(n + 1) : null;
     isAnswerCorrect ? setShowGamefield(true) : setShowGamefield(false);
-    isAnswerCorrect && stopStars === false? setStarCount(starCount + 10) : null
-    isAnswerCorrect && stopStars? setStopStars(false) : null
+    isAnswerCorrect && stopStars === false
+      ? setStarCount(starCount + 10)
+      : null;
+    isAnswerCorrect && stopStars ? setStopStars(false) : null;
   };
 
-  
   const handleOnAnswer = (isCorrect) => {
     isCorrect ? null : removeLife();
-    isCorrect ? null : setStopStars(true)
+    isCorrect ? null : setStopStars(true);
     setIsAnswerCorrect(isCorrect);
   };
-
 
   const navigate = useNavigate();
 
@@ -83,7 +75,6 @@ export const Hra = () => {
     }
   };
 
-
   useEffect(() => {
     if (i < 3) {
       setPlayer(monkey);
@@ -94,18 +85,21 @@ export const Hra = () => {
     }
   }, [i]);
 
+  useEffect(() => {
+    localStorage.setItem('monkey', player);
+  }, [player]);
 
-useEffect(() => {
-  localStorage.setItem('monkey', player);
-}, [player]);
-
-useEffect(() => {
-  localStorage.setItem('starCount', starCount);
-}, [starCount]);
- 
+  useEffect(() => {
+    localStorage.setItem('starCount', starCount);
+  }, [starCount]);
 
   return (
     <>
+      <div>
+        <Helmet>
+          <title>Zachraň se</title>
+        </Helmet>
+      </div>
       <div className="game_container">
         <nav className="game_navigation">
           <Link to="/">
@@ -115,16 +109,17 @@ useEffect(() => {
             <img className="game_button" src={question} alt="pravidla" />{' '}
           </Link>
         </nav>
-        <div className='results'>
-        <div className="lifebar">
-          <img className="lifebar_monkey" src={player} alt="Opička" />
-          {lifebar.map((item) => (
-            <img src={item} className="lifebar_heart" />))}
-            </div>
-            <div className='stars'>
-            <img src={star} className='star'/> 
-            <div className='count'>{starCount.toString()}</div> 
-            </div>
+        <div className="results">
+          <div className="lifebar">
+            <img className="lifebar_monkey" src={player} alt="Opička" />
+            {lifebar.map((item) => (
+              <img src={item} className="lifebar_heart" />
+            ))}
+          </div>
+          <div className="stars">
+            <img src={star} className="star" />
+            <div className="count">{starCount.toString()}</div>
+          </div>
         </div>
       </div>
       <Outlet />
@@ -143,7 +138,7 @@ useEffect(() => {
             <img src={tree4} alt="Strom" />
           </div>
 
-           {showGamefield ? (
+          {showGamefield ? (
             <HraciPole
               onSelect={handleOnSelect}
               shouldMonkeyMove={shouldMonkeyMove}
@@ -162,10 +157,9 @@ useEffect(() => {
               answerCorrect={situation.answerCorrect}
               gameOver={gameOver}
             />
-          )} 
+          )}
         </div>
       </div>
     </>
-  )
-          
+  );
 };
