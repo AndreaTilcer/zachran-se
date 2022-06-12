@@ -4,6 +4,7 @@ import monkey from '../img/monkey.svg';
 import path from './img/cesta.png';
 import lock from './img/lock.svg';
 import liana from './img/liana.png';
+import check from "./img/accept.svg"
 import { gamefieldIcons } from '../databaze';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -30,7 +31,7 @@ export const HraciPole = ({ onSelect, shouldMonkeyMove, n, player }) => {
         return (
           <div
             className={
-              n < item.id
+              n != item.id
                 ? item.classDiv
                 : `${item.classDiv} ${item.classDiv}click`
             }
@@ -42,11 +43,14 @@ export const HraciPole = ({ onSelect, shouldMonkeyMove, n, player }) => {
               src={item.image}
               alt={item.altText}
               onClick={(event) =>
-                n >= item.id ? onSelect(event.target.id) : null
+                n === item.id ? onSelect(event.target.id) : null
               }
             />
             {n < item.id ? (
-              <img src={lock} alt="Zámek" className="lock" />
+              <img src={lock} alt="Zámek" className="lock_check_icon" />
+            ) : null}
+                        {n > item.id ? (
+              <img src={check} alt="Vyřešeno" className="lock_check_icon" />
             ) : null}
           </div>
         );
