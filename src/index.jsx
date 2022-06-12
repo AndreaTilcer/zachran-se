@@ -11,28 +11,40 @@ import emergencyCall from './img/emergency-call.svg';
 import { Situace } from './Situace';
 import { Vyhra } from './Vyhra';
 import { Prohra } from './Prohra';
+import { Helmet } from 'react-helmet';
 
 const App = () => (
-  <div className="homepage_container">
-    <h1 className="heading">ZACHRAŇ SE</h1>
-    <div className="homepage_picture">
-      <img className="homepage_monkey" src={monkey} alt="Opice" />
-      <img className="homepage_call" src={emergencyCall} alt="Tísňové volání" />
+  <>
+    <div>
+      <Helmet>
+        <title>Zachraň se</title>
+      </Helmet>
     </div>
-    <nav className="homepage_navigation">
-      <Link to="/hra">
+    <div className="homepage_container">
+      <h1 className="heading">ZACHRAŇ SE</h1>
+      <div className="homepage_picture">
+        <img className="homepage_monkey" src={monkey} alt="Opice" />
         <img
-          className="homepage_button homepage_button1"
-          src={play}
-          alt="zacit-hrat"
+          className="homepage_call"
+          src={emergencyCall}
+          alt="Tísňové volání"
         />
-      </Link>{' '}
-      <Link to="/pravidla">
-        <img className="homepage_button" src={question} alt="pravidla" />{' '}
-      </Link>
-    </nav>
-    <Outlet />
-  </div>
+      </div>
+      <nav className="homepage_navigation">
+        <Link to="/hra">
+          <img
+            className="homepage_button homepage_button1"
+            src={play}
+            alt="zacit-hrat"
+          />
+        </Link>{' '}
+        <Link to="/pravidla">
+          <img className="homepage_button" src={question} alt="pravidla" />{' '}
+        </Link>
+      </nav>
+      <Outlet />
+    </div>
+  </>
 );
 
 createRoot(document.querySelector('#app')).render(
