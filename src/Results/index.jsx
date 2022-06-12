@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
+
 import stars from "./img/stars.svg"
 import star from "./img/star.svg"
 import './style.css';

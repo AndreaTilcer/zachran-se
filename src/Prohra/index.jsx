@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
+
 import '../Vyhra/style.css';
 import './style.css';
-import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+
 import question from '../img/question.svg';
 import home from '../img/home.svg';
 import cryingMonkey from './img/crying-monkey.png';
 import fire from './img/fire.svg';
 import refresh from '../img/refresh.svg';
-import { lives } from '../databaze.js';
 
 export const Prohra = () => {
   return (

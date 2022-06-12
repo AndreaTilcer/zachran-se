@@ -1,13 +1,16 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import './style.css';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
-import { Hra } from './Hra';
-import { Pravidla } from './Pravidla';
+
+import './style.css';
+
 import play from './img/play.svg';
 import question from './img/question.svg';
 import monkey from './img/monkey.svg';
 import emergencyCall from './img/emergency-call.svg';
+
+import { Hra } from './Hra';
+import { Pravidla } from './Pravidla';
 import { Situace } from './Situace';
 import { Vyhra } from './Vyhra';
 import { Prohra } from './Prohra';
