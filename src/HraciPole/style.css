@@ -1550,115 +1550,94 @@
   }
 
   @keyframes move2 {
-    from {
-      top: 25vh;
-    }
-    to {
-      top: 40vh;
-    }
-  }
+    from {top: 25vh;}
+    to {top: 40vh}
+        
+      }
+    
+      .monkey3 {
+        position: absolute;
+        left: 15vw;
+        top: 40vh;
+        width: 5rem;
+      }
 
-  .monkey3 {
-    position: absolute;
-    left: 15vw;
-    top: 40vh;
-    width: 5rem;
-  }
+      @keyframes move3 {
+        from {top: 40vh;}
+        to {top: 55vh}
+            
+          }
+        
+          .monkey4 {
+            position: absolute;
+            left: 15vw;
+            top: 55vh;
+            width: 5rem;
+          }
 
-  @keyframes move3 {
-    from {
-      top: 40vh;
-    }
-    to {
-      top: 55vh;
-    }
-  }
+          @keyframes move4 {
+            from {top: 55vh;}
+            to {top: 75vh}
+                
+              }
+            
+              .monkey5 {
+                position: absolute;
+                left: 15vw;
+                top: 75vh;
+                width: 5rem;
+              }
 
-  .monkey4 {
-    position: absolute;
-    left: 15vw;
-    top: 55vh;
-    width: 5rem;
-  }
+              @keyframes move5 {
+                from {top: 75vh;}
+                to {top: 90vh}
+                    
+                  }
+                
+                  .monkey6 {
+                    position: absolute;
+                    left: 15vw;
+                    top: 90vh;
+                    width: 5rem;
+                  }
+                  @keyframes move6 {
+                    from {top: 90vh;}
+                    to {top: 105vh}
+                        
+                      }
+                    
+                      .monkey7 {
+                        position: absolute;
+                        left: 15vw;
+                        top: 105vh;
+                        width: 5rem;
+                      }
 
-  @keyframes move4 {
-    from {
-      top: 55vh;
-    }
-    to {
-      top: 75vh;
-    }
-  }
+                      @keyframes move7 {
+                        from {top: 100vh;}
+                        to {top: 125vh}
+                            
+                          }
+                        
+                          .monkey8 {
+                            position: absolute;
+                            left: 15vw;
+                            top: 125vh;
+                            width: 5rem;
+                          }
 
-  .monkey5 {
-    position: absolute;
-    left: 15vw;
-    top: 75vh;
-    width: 5rem;
-  }
-
-  @keyframes move5 {
-    from {
-      top: 75vh;
-    }
-    to {
-      top: 90vh;
-    }
-  }
-
-  .monkey6 {
-    position: absolute;
-    left: 15vw;
-    top: 90vh;
-    width: 5rem;
-  }
-  @keyframes move6 {
-    from {
-      top: 90vh;
-    }
-    to {
-      top: 105vh;
-    }
-  }
-
-  .monkey7 {
-    position: absolute;
-    left: 15vw;
-    top: 105vh;
-    width: 5rem;
-  }
-
-  @keyframes move7 {
-    from {
-      top: 100vh;
-    }
-    to {
-      top: 125vh;
-    }
-  }
-
-  .monkey8 {
-    position: absolute;
-    left: 15vw;
-    top: 125vh;
-    width: 5rem;
-  }
-
-  @keyframes move8 {
-    from {
-      top: 125vh;
-    }
-    to {
-      top: 140vh;
-    }
-  }
-
-  .monkey9 {
-    position: absolute;
-    left: 15vw;
-    top: 125vh;
-    width: 5rem;
-  }
+                          @keyframes move8 {
+                            from {top: 125vh;}
+                            to {top: 140vh}
+                                
+                              }
+                            
+                              .monkey9 {
+                                position: absolute;
+                                left: 15vw;
+                                top: 140vh;
+                                width: 5rem;
+                              }
 
   .monkey_icon {
     width: 5rem;

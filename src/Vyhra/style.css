@@ -1,5 +1,10 @@
 .victory_button {
   width: 5rem;
+  padding: 0.5rem;
+}
+
+.victory_button:hover {
+  transform: scaleX(1.5) scaleY(1.5);
 }
 
 .victory_container {

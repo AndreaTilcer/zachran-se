@@ -20,6 +20,15 @@
   width: 3rem;
 }
 
+.game_button:hover {
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+}
+
 .lifebar_monkey {
   width: 3rem;
   padding: 0.5rem;
@@ -28,6 +37,21 @@
 .lifebar_heart {
   width: 2rem;
   padding: 0.5rem;
+}
+
+.stars {
+  display: flex;
+}
+
+.star {
+  width: 3rem;
+  padding: 0.5rem;
+}
+
+.count {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+  padding: 0 0.5rem 0;
 }
 
 .gamefield {

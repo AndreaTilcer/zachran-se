@@ -79,6 +79,7 @@
 
 .ikona_1:hover {
   cursor: grab;
+  transform: scaleX(1.5) scaleY(1.5);
 }
 
 .ikona_1:active {
@@ -97,11 +98,12 @@
   border: none;
   padding: 0px;
   background-color: transparent;
+  padding-bottom: 10px;
 }
 
-.window_button {
+.window_button:hover {
   cursor: pointer;
-  padding-bottom: 10px;
+  transform: scaleX(1.5) scaleY(1.5);
 }
 
 .heading_icon {
