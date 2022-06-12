@@ -24,6 +24,22 @@
   width: 330px;
 }
 
+.hint_icon {
+  width: 2rem;
+}
+
+.hint_class_desktop {
+  width: 400px;
+  position: fixed;
+  bottom: 200px;
+}
+
+.hint_class_mobile {
+  width: 150px;
+  position: fixed;
+  display: none;
+}
+
 .situace_2 {
   max-width: 240px;
 }
@@ -271,6 +287,18 @@
 }
 
 @media (max-width: 600px) {
+  .hint_class_desktop {
+    display: none;
+  }
+
+  .hint_class_mobile {
+    display: block;
+  }
+
+  .hint_icon {
+    width: 1.6rem;
+  }
+
   .situace_container {
     width: 450px;
     margin: 0px;
