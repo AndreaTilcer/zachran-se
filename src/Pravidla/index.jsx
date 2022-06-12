@@ -10,6 +10,7 @@ import stars from '../img/stars.svg';
 import gamefieldPic from '../img/Gamefield_hint.gif';
 import dndPic from '../img/DnD_hint.gif';
 import clickPic from '../img/onClick_hint.gif';
+import cottage from '../HraciPole/img/house.svg';
 
 export const Pravidla = () => {
   return (
@@ -61,9 +62,12 @@ export const Pravidla = () => {
           </p>
           <h2 className="heading_2">Jak tedy skutečně zahájit hru?</h2>
           <p>
-            Hru spustíš kliknutím na ikonu na domovské obrazovce či přímo zde v
-            pravidlech. Jakmile se ocitneš v hracím poli, stačí kliknout na
-            ikonku domečku, kde na tebe bude čekat řešení první situace.
+            Hru spustíš kliknutím na ikonu{' '}
+            <img className="rules_icon play" src={play} alt="hrát" /> na
+            domovské obrazovce či přímo zde v pravidlech. Jakmile se ocitneš v
+            hracím poli, stačí kliknout na ikonku domečku{' '}
+            <img className="rules_icon cottage" src={cottage} alt="dům" />, kde
+            na tebe bude čekat řešení první situace.
           </p>
           <img className="rules_hint" src={gamefieldPic} alt="hrací pole" />
           <div className="rules_content_container">
